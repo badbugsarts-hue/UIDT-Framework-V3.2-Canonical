@@ -1,4 +1,13 @@
+     
+**CANONICAL VERSION - V3.2**
 
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17554179-orange.svg)](https://doi.org/10.5281/zenodo.17554179) 
+[![Version](https://img.shields.io/badge/Version-V3.2_Canonical-green.svg)]() 
+
+**This repository contains the canonical UIDT parameters established November 9, 2025.** 
+**Previous repository**
+
+**([UIDT-Framework-16.1](https://github.com/badbugsartshue/UIDT-Framework-16.1)) is ARCHIVED due to parameter inconsistencies.** 
 # Unified Information-Density Theory (UIDT) Technical Note V3.2 (Revised Edition)
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
