@@ -136,39 +136,23 @@ This V3.2 edition formally supersedes:
 
 ## 🛠️ Technical Implementation
 
-### LaTeX Dependencies
-```latex
-\usepackage{amsmath,amssymb,amsthm}
-\usepackage{hyperref,graphicx,geometry}
-\usepackage{booktabs,xcolor,listings}
-\usepackage{longtable,array,setspace}
-\usepackage{float,enumitem,titlesec}
-```
 
-Code Features
+###🧪 Reproducibility
 
-· Professional Typesetting: Theorem environments, proper spacing
-· Syntax Highlighting: Python code with line numbers
-· Optimized Tables: booktabs format, no overflow issues
-· Cross-referencing: Hyperlinks for equations, tables, sections
-
-
-
-🧪 Reproducibility
-
-Python Environment
-
-```bash
+## Python Environment
+~~~
+bash
 # Required packages
 pip install numpy scipy matplotlib
 
 # Run verification code 
 python verification_script.py
-```
+~~~
 
-Expected Output
+## Expected Output
 
-```
+
+~~~
 v = 47.66 MeV
 Vacuum: LHS=0.138500, RHS=0.138500
   Error = 4.44e-16
@@ -181,35 +165,35 @@ RG: 5kappa^2=1.250000, 3lambda_S=1.251000
 Derived:
   <d_mu S d^mu S> = 0.011045 GeV^2
   gamma = 16.27
+~~~
 
+###📚 Scientific Context
 
-📚 Scientific Context
-
-Millennium Prize Problem
+## Millennium Prize Problem
 
 This work addresses the Yang-Mills Existence and Mass Gap problem formulated by Jaffe and Witten (2000) as one of the seven Clay Mathematics Institute Millennium Prize Problems.
 
-Theoretical Significance
+### Theoretical Significance
 
 · First Principles Derivation: All parameters derived, not fitted
 · Non-Perturbative Solution: Complete numerical verification
 · UV Completeness: Asymptotic safety via RG fixed point
 · Mathematical Rigor: GNS construction for Hilbert space existence
 
-🔭 Experimental Connections
+### 🔭 Experimental Connections
 
-Lattice QCD Validation
+## Lattice QCD Validation
 
 · Mass Gap: 1710 MeV vs lattice 1710 ± 80 MeV (exact match)
 · Gluon Condensate: C = 0.277 GeV⁴ from lattice determinations
 · Glueball Spectrum: Lightest 0⁺⁺ state agreement
 
-Strong Coupling
+## Strong Coupling
 
 · α_s(M_Z) = 0.1179 consistent with PDG 2024
 · IR freezing at α_s(1 GeV) ≈ 0.5 confirmed by lattice studies
 
-📋 Version History
+### 📋 Version History
 
 Version γ Value Status Key Improvement
 V2.0 7.52 (fit) Phenomenological Initial framework
@@ -217,7 +201,7 @@ V3.0 Draft 2.71 Wrong branch Incorrect solution
 V3.0 Intermediate 12.5 Inconsistent γ Partial correction
 V3.2 Final 16.3 (derived) Canonical Complete self-consistency
 
-📄 License
+### 📄 License
 
 Creative Commons Attribution 4.0 International (CC BY 4.0)
 
@@ -225,7 +209,7 @@ Creative Commons Attribution 4.0 International (CC BY 4.0)
 · Must give appropriate credit
 · No additional restrictions
 
-👥 Author Information
+### 👥 Author Information
 
 Philipp Rietz
 
@@ -233,7 +217,7 @@ Philipp Rietz
 · ORCID: 0009-0007-4307-1609
 · License: CC BY 4.0
 
-📞 Contact and Support
+### 📞 Contact and Support
 
 For questions, verification attempts, or collaboration:
 
@@ -241,7 +225,7 @@ For questions, verification attempts, or collaboration:
 2. Scientific Questions: Email correspondence
 3. Verification Results: Independent reproduction encouraged
 
-🔮 Future Directions
+### 🔮 Future Directions
 
 · Experimental predictions for glueball spectroscopy
 · Extensions to full QCD with dynamical fermions
