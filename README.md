@@ -1,9 +1,6 @@
      
 **CANONICAL VERSION - V3.2**
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17554179-orange.svg)](https://doi.org/10.5281/zenodo.17554179) 
-[![Version](https://img.shields.io/badge/Version-V3.2_Canonical-green.svg)]() 
-
 **This repository contains the canonical UIDT parameters established November 9, 2025.** 
 **Previous repository**
 
