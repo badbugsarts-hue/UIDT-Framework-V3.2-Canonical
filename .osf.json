@@ -1,0 +1,30 @@
+{
+    "data": {
+        "type": "files",
+        "attributes": {
+            "title": "UIDT Technical Note V3.2 (Revised Edition): Complete Independent Verification of Self-Consistent Parameters Parameter-Free Derivation from First Principles (\\gamma \\approx 16.3)",
+            "description": "This Technical Note V3.2 (Revised Edition) provides an independent, fully self-consistent solution of the Unified Information-Density Theory (UIDT) Mass Gap problem through complete numerical verification of the coupled vacuum, Schwinger–Dyson, and renormalization group equations.\n\nUsing multiple initial conditions and rigorous convergence criteria (residuals < 10^{-5}), we confirm the physically preferred solution branch:\n- m_S = 1.705 GeV (scalar field mass)\n- \\kappa = 0.500 (coupling constant)\n- \\lambda_S = 0.417 (self-coupling, perturbatively stable)\n- \\gamma = 16.3 (proportionality factor, derived, not fitted)\n\nThe resulting mass gap \\Delta = 1710 MeV matches lattice QCD exactly. All parameters satisfy:\n- Vacuum self-consistency (relative error < 10^{-15})\n- Schwinger–Dyson mass gap equation\n- RG fixed-point constraint (5\\kappa^2 = 3\\lambda_S exactly)\n- Perturbative stability (\\lambda_S < 1)\n- Vacuum stability (V''(v) > 0)\n\nThis establishes UIDT as a parameter-free, predictive theory for the Yang–Mills mass gap problem.",
+            "tags": [
+                "Yang–Mills Theory",
+                "Mass Gap",
+                "UIDT",
+                "Self-Consistency",
+                "Numerical Verification",
+                "Millennium Prize Problem",
+                "\\gamma=16.3"
+            ],
+            "license": "CC-BY-4.0",
+            "category": "project",
+            "contributors": [
+                {
+                    "bibliographic": true,
+                    "permissions": "admin",
+                    "user": {
+                        "fullname": "Philipp Rietz",
+                        "orcid": "0009-0007-4307-1609"
+                    }
+                }
+            ]
+        }
+    }
+}

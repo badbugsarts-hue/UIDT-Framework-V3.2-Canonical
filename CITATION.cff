@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this report, please cite it as below."
+authors:
+  - family-names: Rietz
+    given-names: Philipp
+    orcid: "https://orcid.org/0009-0007-4307-1609"
+title: "UIDT Technical Note V3.1 – Numerical Audit and Consistency Verification Report: Complete Audit of Canonical Parameters Against Internal Ultra Report Benchmarks"
+version: 3.2
+doi: 10.5281/zenodo.17554179
+date-released: 2025-11-08
+url: "https://osf.io/wdyxc/"
+license: "CC-BY-4.0"
+references:
+  - type: report
+    authors:
+      - family-names: Rietz
+        given-names: Philipp
+    title: "UIDT Ultra Report v16"
+    doi: "10.17605/OSF.IO/WDYXC"
+    year: 2025
+
+keywords:
+- "Unified Information-Density Theory"
+   - "UIDT v3.2"
+   - "Numerical Audit"
+   - "Yang-Mills Mass Gap"
+   - "gamma=16.3"
+   - "Mass Gap Delta=1710 MeV"
+# more Keywords are optional 
+#   - "Lattice QCD Validation"
+#   - "Renormalization Group Fixed Point"
+#   - "Schwinger-Dyson Equation"
+#   - "Asymptotic Safety"
+#   - "Perturbative Stability"
+#   - "Vacuum Expectation Value v=47.7 MeV"
+#   - "Gluon Condensate C=0.277 GeV^4"
+#   - "Scalar Field Mass m_S=1.705 GeV"
+#   - "Coupling kappa=0.500"
+#   - "Self-Coupling lambda_S=0.417"
+#   - "Millennium Prize Problem Solution"
+#   - "Quantum Field Theory"
+#   - "Entropy-Curvature Coupling"
+#   - "Falsifiable Predictions"
