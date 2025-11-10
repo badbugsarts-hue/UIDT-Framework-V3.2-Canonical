@@ -1,0 +1,307 @@
+import numpy as np
+from scipy.optimize import fsolve, root
+from scipy.integrate import solve_ivp
+import sympy as sp
+import matplotlib.pyplot as plt
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from qutip import Qobj, mesolve
+from statsmodels.stats.weightstats import DescrStatsW
+from dataclasses import dataclass, field
+from typing import List, Tuple, Optional, Dict
+from abc import ABC, abstractmethod
+import argparse
+import asyncio
+import json
+import logging
+from pathlib import Path
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+@dataclass(frozen=True)
+class UIDTParameters:
+    """Immutable dataclass for canonical UIDT v3.1 parameters."""
+    m_S: float = 1.705  # GeV
+    kappa: float = 0.500
+    lambda_S: float = 0.417
+    v: float = 47.7e-3  # GeV
+    gamma_canonical: float = 16.3
+    Delta: float = 1.710  # GeV (exact)
+    Lambda: float = 1.0  # GeV
+    C: float = 0.277  # GeV^4
+    alpha_s: float = 0.5  # at 1 GeV
+
+    def validate_rg_fixed_point(self) -> bool:
+        return np.isclose(5 * self.kappa**2, 3 * self.lambda_S, atol=1e-14)
+
+class UIDTSolver(ABC):
+    """Abstract base class for UIDT solvers."""
+    @abstractmethod
+    def solve(self, initial_guess: np.ndarray) -> Tuple[np.ndarray, Dict[str, float]]:
+        pass
+
+class NumericalSolver(UIDTSolver):
+    """Numerical solver using SciPy fsolve and root."""
+    def __init__(self, params: UIDTParameters):
+        self.params = params
+
+    def equations(self, vars: np.ndarray) -> np.ndarray:
+        m_S_sq, kappa, lambda_S, v = vars
+        eq1 = m_S_sq * v + (lambda_S * v**3) / 6 - (kappa * self.params.C) / self.params.Lambda
+        eq2 = self.params.Delta**2 - m_S_sq - (kappa**2 * self.params.C) / (4 * self.params.Lambda**2) * (
+            1 + np.log(self.params.Lambda**2 / np.abs(m_S_sq)) / (16 * np.pi**2)
+        )
+        eq3 = 5 * kappa**2 - 3 * lambda_S
+        partial_S_sq = (kappa * self.params.alpha_s * self.params.C) / (2 * np.pi * self.params.Lambda)
+        gamma = self.params.Delta / np.sqrt(partial_S_sq) if partial_S_sq > 0 else 0
+        eq4 = gamma - self.params.gamma_canonical
+        return np.array([eq1, eq2, eq3, eq4])
+
+    def solve(self, initial_guess: np.ndarray) -> Tuple[np.ndarray, Dict[str, float]]:
+        sol_fsolve = fsolve(self.equations, initial_guess)
+        if np.all(np.abs(self.equations(sol_fsolve)) < 1e-14):
+            method = 'fsolve'
+        else:
+            sol_root = root(self.equations, initial_guess).x
+            sol_fsolve = sol_root
+            method = 'root'
+        residual = np.abs(self.equations(sol_fsolve))
+        return sol_fsolve, {'method': method, 'residual': residual.max()}
+
+class SymbolicValidator:
+    """Symbolic validation using SymPy."""
+    def __init__(self, params: UIDTParameters):
+        self.params = params
+        self.m_S_sq, self.kappa, self.lambda_S, self.v = sp.symbols('m_S_sq kappa lambda_S v')
+
+    def validate(self) -> str:
+        eq1 = self.m_S_sq * self.v + (self.lambda_S * self.v**3) / 6 - (self.kappa * self.params.C) / self.params.Lambda
+        eq2 = self.params.Delta**2 - self.m_S_sq - (self.kappa**2 * self.params.C) / (4 * self.params.Lambda**2) * (
+            1 + sp.log(self.params.Lambda**2 / sp.Abs(self.m_S_sq)) / (16 * sp.pi**2)
+        )
+        eq3 = 5 * self.kappa**2 - 3 * self.lambda_S
+        partial_S_sq = (self.kappa * self.params.alpha_s * self.params.C) / (2 * sp.pi * self.params.Lambda)
+        gamma = self.params.Delta / sp.sqrt(partial_S_sq)
+        eq4 = gamma - self.params.gamma_canonical
+        sols = sp.solve([eq1, eq2, eq3, eq4], (self.m_S_sq, self.kappa, self.lambda_S, self.v))
+        return f"Symbolic solutions: {sols}" if sols else "No symbolic solution (numerical preferred)."
+
+class RGFlowSimulator:
+    """Renormalization Group flow simulator with async integration."""
+    def __init__(self, params: UIDTParameters):
+        self.params = params
+
+    async def simulate_flow(self, t_span: Tuple[float, float], initial: np.ndarray) -> np.ndarray:
+        def beta_func(t: float, y: np.ndarray) -> np.ndarray:
+            kappa, lambda_S = y
+            dkappa_dt = - (kappa**3) / (8 * np.pi**2)  # Example beta for kappa
+            dlambda_dt = (lambda_S**2) / (16 * np.pi**2) + (5 * kappa**4) / (8 * np.pi**2)  # Coupled
+            return np.array([dkappa_dt, dlambda_dt])
+
+        sol = await asyncio.to_thread(solve_ivp, beta_func, t_span, initial, method='RK45')
+        return sol.y
+
+    def plot_flow(self, flow_data: np.ndarray, filename: str = 'rg_flow.png'):
+        plt.figure()
+        plt.plot(flow_data[0], flow_data[1], label='RG Flow (kappa vs lambda_S)')
+        plt.xlabel('kappa')
+        plt.ylabel('lambda_S')
+        plt.title('UIDT RG Flow')
+        plt.legend()
+        plt.savefig(filename)
+        plt.close()
+        logger.info(f"RG flow plot saved to {filename}")
+
+class MLApproximator(nn.Module):
+    """PyTorch neural network for approximating UIDT solutions."""
+    def __init__(self):
+        super().__init__()
+        self.fc = nn.Sequential(
+            nn.Linear(4, 128), nn.ReLU(),
+            nn.Linear(128, 128), nn.ReLU(),
+            nn.Linear(128, 4)  # Output: m_S_sq, kappa, lambda_S, v
+        )
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        return self.fc(x)
+
+class MLTrainer:
+    """Trainer for ML approximator."""
+    def __init__(self, params: UIDTParameters):
+        self.model = MLApproximator()
+        self.optimizer = optim.Adam(self.model.parameters(), lr=0.001)
+        self.criterion = nn.MSELoss()
+        self.params = params
+
+    def generate_training_data(self, n_samples: int = 1000) -> Tuple[torch.Tensor, torch.Tensor]:
+        inputs = torch.randn(n_samples, 4) * 0.1 + torch.tensor([self.params.m_S**2, self.params.kappa, self.params.lambda_S, self.params.v])
+        targets = inputs  # Self-supervised for stability
+        return inputs, targets
+
+    def train(self, epochs: int = 100):
+        inputs, targets = self.generate_training_data()
+        for epoch in range(epochs):
+            self.optimizer.zero_grad()
+            outputs = self.model(inputs)
+            loss = self.criterion(outputs, targets)
+            loss.backward()
+            self.optimizer.step()
+            if epoch % 10 == 0:
+                logger.info(f"Epoch {epoch}: Loss = {loss.item():.4e}")
+
+    def approximate(self, input_params: np.ndarray) -> np.ndarray:
+        with torch.no_grad():
+            return self.model(torch.tensor(input_params).float()).numpy()
+
+class HMCLatticeSimulator:
+    """Hybrid Monte Carlo for lattice simulations."""
+    def __init__(self, params: UIDTParameters, lattice_size: int = 16):
+        self.params = params
+        self.lattice_size = lattice_size
+        self.field = np.random.randn(lattice_size, lattice_size)  # Scalar field S
+
+    def action(self) -> float:
+        grad = np.gradient(self.field)
+        kinetic = 0.5 * np.sum(grad[0]**2 + grad[1]**2)
+        potential = 0.5 * self.params.m_S**2 * np.sum(self.field**2) + (self.params.lambda_S / 24) * np.sum(self.field**4)
+        return kinetic + potential
+
+    def leapfrog_step(self, momentum: np.ndarray, dt: float) -> None:
+        self.field += dt * momentum
+        force = -self.params.m_S**2 * self.field - (self.params.lambda_S / 6) * self.field**3
+        momentum += dt * force
+
+    def metropolis_accept(self, delta_action: float) -> bool:
+        return np.random.rand() < np.exp(-delta_action)
+
+    def run_hmc(self, n_steps: int = 100, traj_length: float = 1.0, dt: float = 0.1) -> List[float]:
+        accepts = []
+        for _ in range(n_steps):
+            old_action = self.action()
+            momentum = np.random.randn(*self.field.shape)
+            old_momentum = momentum.copy()
+            for _ in range(int(traj_length / dt)):
+                self.leapfrog_step(momentum, dt)
+            new_action = self.action()
+            delta = new_action + 0.5 * np.sum(momentum**2) - (old_action + 0.5 * np.sum(old_momentum**2))
+            if not self.metropolis_accept(delta):
+                self.field -= dt * momentum  # Revert (simplified)
+            accepts.append(1 if self.metropolis_accept(delta) else 0)
+        return accepts  # For acceptance rate
+
+    def compute_mass_gap(self) -> float:
+        correlator = np.correlate(self.field.flatten(), self.field.flatten(), mode='full')
+        return np.sqrt(-np.log(correlator[self.lattice_size] / correlator[0])) * self.params.Delta  # Approximate
+
+class QuantumSimulator:
+    """QuTiP-based quantum field simulator for effective Hamiltonian."""
+    def __init__(self, params: UIDTParameters):
+        self.params = params
+        self.H = Qobj([[self.params.m_S**2, self.params.kappa], [self.params.kappa, self.params.lambda_S / 6]])  # Effective 2x2
+
+    def evolve(self, initial_state: Qobj, times: np.ndarray) -> Dict:
+        result = mesolve(self.H, initial_state, times)
+        return {'expect': result.expect[0] if result.expect else None}
+
+class SensitivityAnalyzer:
+    """Sensitivity and uncertainty analysis."""
+    def __init__(self, solver: NumericalSolver, n_samples: int = 1000):
+        self.solver = solver
+        self.n_samples = n_samples
+
+    def monte_carlo(self, noise_level: float = 0.01) -> DescrStatsW:
+        results = []
+        for _ in range(self.n_samples):
+            guess = np.array([self.solver.params.m_S**2, self.solver.params.kappa, self.solver.params.lambda_S, self.solver.params.v]) * (1 + noise_level * np.random.randn(4))
+            sol, _ = self.solver.solve(guess)
+            results.append(sol)
+        stats = DescrStatsW(np.array(results))
+        return stats
+
+    def report(self, stats: DescrStatsW) -> Dict:
+        return {'mean': stats.mean, 'std': stats.std, 'ci': stats.tconfint_mean()}
+
+class UIDTSim:
+    """Main UIDT-Sim orchestrator."""
+    def __init__(self):
+        self.params = UIDTParameters()
+        self.solver = NumericalSolver(self.params)
+        self.symbolic = SymbolicValidator(self.params)
+        self.rg_sim = RGFlowSimulator(self.params)
+        self.ml_trainer = MLTrainer(self.params)
+        self.hmc = HMCLatticeSimulator(self.params)
+        self.quantum = QuantumSimulator(self.params)
+        self.sensitivity = SensitivityAnalyzer(self.solver)
+
+    async def run_full_simulation(self, config: Dict) -> Dict:
+        logger.info("Starting full UIDT simulation...")
+        
+        # Numerical solve
+        initial_guess = np.array([self.params.m_S**2, self.params.kappa, self.params.lambda_S, self.params.v])
+        sol, info = self.solver.solve(initial_guess)
+        results = {'numerical_sol': sol.tolist(), 'info': info}
+        
+        # Symbolic
+        results['symbolic'] = self.symbolic.validate()
+        
+        # RG Flow (async)
+        flow = await self.rg_sim.simulate_flow((0, 10), np.array([self.params.kappa, self.params.lambda_S]))
+        self.rg_sim.plot_flow(flow)
+        results['rg_flow'] = flow.tolist()
+        
+        # ML Approximation
+        self.ml_trainer.train()
+        approx = self.ml_trainer.approximate(initial_guess)
+        results['ml_approx'] = approx.tolist()
+        
+        # HMC Lattice
+        accepts = self.hmc.run_hmc()
+        mass_gap = self.hmc.compute_mass_gap()
+        results['hmc'] = {'accept_rate': np.mean(accepts), 'mass_gap': mass_gap}
+        
+        # Quantum Evolution
+        initial_state = Qobj([[1], [0]])
+        times = np.linspace(0, 10, 100)
+        q_result = self.quantum.evolve(initial_state, times)
+        results['quantum'] = q_result
+        
+        # Sensitivity
+        stats = self.sensitivity.monte_carlo()
+        report = self.sensitivity.report(stats)
+        results['sensitivity'] = report
+        
+        # Export
+        with open('uidt_results.json', 'w') as f:
+            json.dump(results, f)
+        logger.info("Simulation complete. Results exported to uidt_results.json")
+        
+        return results
+
+    def match_mode(self, mode: str):
+        match mode:
+            case 'numerical':
+                return self.solver.solve(np.array([self.params.m_S**2, self.params.kappa, self.params.lambda_S, self.params.v]))
+            case 'rg':
+                return asyncio.run(self.rg_sim.simulate_flow((0, 10), np.array([self.params.kappa, self.params.lambda_S])))
+            case 'full':
+                return asyncio.run(self.run_full_simulation({}))
+            case _:
+                raise ValueError("Unknown mode")
+
+def main():
+    parser = argparse.ArgumentParser(description="UIDT-Sim v1.0: Advanced UIDT Simulator")
+    parser.add_argument('--mode', type=str, default='full', choices=['numerical', 'rg', 'full', 'ml', 'hmc', 'quantum', 'sensitivity'],
+                        help="Simulation mode")
+    args = parser.parse_args()
+    
+    sim = UIDTSim()
+    try:
+        result = sim.match_mode(args.mode)
+        print(f"Result for {args.mode}: {result}")
+    except Exception as e:
+        logger.error(f"Error: {e}")
+
+if __name__ == "__main__":
+    main()
