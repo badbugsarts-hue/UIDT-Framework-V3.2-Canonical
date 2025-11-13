@@ -1,0 +1,52 @@
+{
+  "title": "UIDT v3.3: Unified Information-Density Theory - Complete Research Package",
+  "description": "Complete mathematical framework resolving Yang-Mills Mass Gap Millennium Problem with full experimental verification suite",
+  "keywords": [
+    "millennium-problems",
+    "yang-mills", 
+    "mass-gap",
+    "quantum-gravity",
+    "gamma-scaling",
+    "cosmological-constant",
+    "information-geometry",
+    "unified-theory"
+  ],
+  "license": "CC-BY-4.0",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Rietz, Philipp",
+      "affiliation": "Independent Researcher",
+      "orcid": "0009-0007-4307-1609"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Theoretical Physics Community", 
+      "type": "Other"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isPreviousVersionOf",
+      "identifier": "10.5281/zenodo.17554179"
+    },
+    {
+      "relation": "isSupplementedBy", 
+      "identifier": "10.17605/OSF.IO/WDYXC"
+    }
+  ],
+  "communities": [
+    {
+      "identifier": "theoretical-physics"
+    },
+    {
+      "identifier": "high-energy-physics"
+    },
+    {
+      "identifier": "cosmology"
+    }
+  ]
+}
