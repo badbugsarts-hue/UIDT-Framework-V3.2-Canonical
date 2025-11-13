@@ -198,8 +198,8 @@ UIDT v3.3 establishes that:
 
 ---
 
-Final Status: UIDT Ω v3.3 is scientifically and technically CLOSED.
-🚀
 
-``` 
+
+```
+🚀 Final Status: UIDT Ω v3.3 is scientifically and technically CLOSED.
 ```
