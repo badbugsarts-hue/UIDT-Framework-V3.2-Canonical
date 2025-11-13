@@ -1,4 +1,4 @@
-```markdown
+
 # UIDT v3.3: Unified Information-Density Theory Ω
 
 ![UIDT Banner](https://img.shields.io/badge/UIDT-v3.3_Ω-important)
@@ -28,9 +28,9 @@
 
 The invariant **γ ≈ 16.339** provides complete unification:
 
-```math
+~~~math
 Physics = Δ · γⁿ  for n ∈ {-12, -3, 0, +2, +3, +6}
-```
+~~~
 
 Scaling Laws:
 
@@ -50,7 +50,7 @@ For Researchers
 
 For Developers
 
-```bash
+~~~bash
 # Clone verification environment
 git clone https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical
 cd UIDT-Framework-V3.2-Canonical
@@ -60,7 +60,7 @@ pip install -r requirements.txt
 
 # Run verification
 python UIDT-3.3-Verification.py
-```
+~~~
 
 📊 Empirical Predictions
 
@@ -102,20 +102,20 @@ Computational Environment
 
 Expected Output
 
-```
+~~~
 UIDT v3.3 Numerical Verification
 ================================
 Canonical Solution: m_S = 1.705 GeV, kappa = 0.500, lambda_S = 0.417
 Max Residual: 4.44e-16
 Gamma Invariant: 16.339
 Overall Consistency: ✅ PASS (score: 0.998)
-```
+~~~
 
 📚 Citation
 
 Preferred Citation
 
-```bibtex
+~~~bibtex
 @article{rietz2024uidt,
   title = {Unified Information-Density Theory (UIDT) Ω v3.3: 
            Complete Mathematical Synthesis and Gamma-Unification},
@@ -126,7 +126,7 @@ Preferred Citation
   publisher = {OSF Preprints},
   copyright = {CC BY 4.0}
 }
-```
+~~~
 
 Alternative Formats
 
