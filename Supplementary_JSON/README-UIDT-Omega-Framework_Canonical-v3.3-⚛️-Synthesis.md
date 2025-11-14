@@ -13,9 +13,9 @@
 
 ---
 
-## 📚 Table of Contents (AI-Generated)
+## 📚 Table of Contents 
 
-1.  [Motivation & Vision: The $\gamma$-Universalization Principle](#1-motivation--vision-the-gamma-universalization-principle)
+1.  [Motivation & Vision: The Ω Universalization Principle](#1-motivation--vision-the-gamma-universalization-principle)
 2.  [Key Scientific Breakthroughs](#2-key-scientific-breakthroughs)
 3.  [System Architecture Diagram (Mermaid)](#3-system-architecture-diagram-mermaid)
 4.  [Repository Tree](#4-repository-tree)
