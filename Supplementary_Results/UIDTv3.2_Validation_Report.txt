@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIDT &Omega; Monte Carlo Validation Data (v3.3)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 25px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        h1, h2, h3 {
+            margin-top: 24px;
+            margin-bottom: 16px;
+            font-weight: 600;
+            line-height: 1.25;
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: .3em;
+        }
+        h1 { font-size: 2.1em; color: #1a1a1a; }
+        h2 { font-size: 1.7em; }
+        h3 { font-size: 1.4em; }
+        p { margin-bottom: 16px; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            padding: .2em .4em;
+            margin: 0;
+            font-size: 85%;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        pre {
+            padding: 16px;
+            overflow: auto;
+            font-size: 85%;
+            line-height: 1.45;
+            background-color: #24292e;
+            color: #f6f8fa;
+            border-radius: 6px;
+        }
+        pre code {
+            background-color: transparent;
+            border: 0;
+            color: inherit;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 16px;
+            display: block;
+            overflow-x: auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f6f8fa;
+            font-weight: 600;
+        }
+        tr:nth-child(even) { background-color: #ffffff; }
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: .25em solid #dfe2e5;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>⚛️ UIDT $\Omega$ Monte Carlo Validation Data (v3.3)</h1>
+    <p>
+        <strong>Author:</strong> Philipp Rietz<br>
+        <strong>License:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a><br>
+        <strong>Canonical DOI (V3.2/V3.3):</strong> <a href="https://doi.org/10.5281/zenodo.17554179">10.5281/zenodo.17554179</a><br>
+        <strong>Status:</strong> <a href="DOCS/STATUS_REPORT.md">Validation Data (Technically Closed)</a>
+    </p>
+
+    <hr>
+
+    <h2>1. Overview</h2>
+    <p>This repository contains the complete dataset from the final <strong>Monte Carlo (MC) validation run</strong> for the Unified Information-Density Theory (UIDT) $\Omega$ framework. This data serves as the non-perturbative statistical validation of the canonical parameters ($\mathbf{\Delta, \gamma, \kappa, m_S, \lambda_S}$) derived from the analytical 3-equation system.</p>
+    <p>The dataset includes the raw MC chain samples, high-precision mean values, parameter correlation matrices, and the final summary tables and plots used in the UIDT v3.3 publication.</p>
+    
+    <h3>🌟 Key Data Artifacts</h3>
+    <ul>
+        <li><strong>Raw Data:</strong> 100,000 high-thinning samples from the primary MC simulation (<code>UIDT_MonteCarlo_samples_100k.csv</code>).</li>
+        <li><strong>High-Precision Means:</strong> Final derived parameter values with high precision (<code>UIDT_HighPrecision_mean_values.csv</code>).</li>
+        <li><strong>Correlation Analysis:</strong> Full correlation matrix showing dependencies between parameters (<code>UIDT_MonteCarlo_correlation_matrix.csv</code>).</li>
+        <li><strong>Plots:</strong> Diagnostic plots including posterior distributions (corner plot) and parameter histograms.</li>
+    </ul>
+
+    <hr>
+
+    <h2>2. File Manifest & Data Description</h2>
+    <p>This section details the scientific purpose and content of each file in this data package.</p>
+
+    <h3>2.1. Raw Simulation Data</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>File</th>
+                <th>Description</th>
+                <th>Purpose & Context</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong><code>UIDT_MonteCarlo_samples_100k.csv</code></strong></td>
+                <td>Raw Monte Carlo Chain Data (100k samples).</td>
+                <td><strong>(Primary Artifact)</strong> This file contains the thinned samples (100,000 steps) from the MC simulation. It serves as the "ground truth" for all subsequent analysis. The columns represent the canonical parameters (e.g., <code>m_S</code>, <code>kappa</code>, <code>lambda_S</code>, <code>Delta</code>, <code>gamma</code>).</td>
+            </tr>
+            <tr>
+                <td><strong><code>UIDT_HighPrecision_mean_values.csv</code></strong></td>
+                <td>High-Precision Parameter Means.</td>
+                <td>Contains the final, high-precision mean values (and standard deviations) for the canonical parameters, calculated by averaging the <code>100k_samples.csv</code> file.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>2.2. Summary Statistics & Tables</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>File</th>
+                <th>Description</th>
+                <th>Purpose & Context</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong><code>UIDT_MonteCarlo_summary.csv</code></strong></td>
+                <td>Full Statistical Summary.</td>
+                <td>A comprehensive summary table including mean, median, 68% and 95% confidence intervals (CI), and standard deviation for all parameters.</td>
+            </tr>
+            <tr>
+                <td><strong><code>UIDT_MonteCarlo_summary_table_short.csv</code></strong></td>
+                <td>Abbreviated Summary.</td>
+                <td>A simplified version of the summary table, often used for quick reference or embedding in presentations.</td>
+            </tr>
+            <tr>
+                <td><strong><code>UIDT_MonteCarlo_correlation_matrix.csv</code></strong></td>
+                <td>Parameter Correlation Matrix.</td>
+                <td>A symmetric matrix showing the statistical correlation (Pearson r) between all parameters. Essential for understanding parameter degeneracies (e.g., the strong correlation between $\kappa$ and $\lambda_S$).</td>
+            </tr>
+            <tr>
+                <td><strong><code>UIDT_MonteCarlo_summary_table.tex</code></strong></td>
+                <td>LaTeX Publication Table.</td>
+                <td>The final, publication-ready LaTeX code for the summary table, formatted for direct inclusion in the UIDT v3.3 manuscript.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>2.3. Plots and Visualizations</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>File</th>
+                <th>Description</th>
+                <th>Purpose & Context</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong><code>image.png</code> (f45ac4e9...)</strong></td>
+                <td>(Assumed) Correlation Matrix Plot.</td>
+                <td>A heatmap visualization of the <code>correlation_matrix.csv</code> file. It graphically shows the strong positive correlation between $\kappa$ and $\lambda_S$ (confirming the $5\kappa^2 = 3\lambda_S$ RG-Fixpoint).</td>
+            </tr>
+            <tr>
+                <td><strong><code>image.png</code> (3413530b...)</strong></td>
+                <td>(Assumed) Posterior Distributions (Corner Plot).</td>
+                <td><strong>(Primary Plot)</strong> This is the main diagnostic plot for the MC run. It shows the 1D marginalized histograms for each parameter (confirming Gaussianity/convergence) and the 2D contour plots showing the covariance between parameter pairs.</td>
+            </tr>
+            <tr>
+                <td><strong><code>image.png</code> (e54d7ce0...)</strong></td>
+                <td>(Assumed) 1D Parameter Histograms.</td>
+                <td>A detailed view of the 1D marginalized posterior distributions (histograms) for the key parameters ($\Delta, \gamma, \kappa, m_S, \lambda_S$).</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>3. How to Use (Reproducibility)</h2>
+    <p>To reproduce the analysis and plots from this dataset:</p>
+
+    <ol>
+        <li><strong>Load the Samples:</strong>
+<pre><code>import pandas as pd
+# Load the primary data source
+samples = pd.read_csv("UIDT_MonteCarlo_samples_100k.csv")
+</code></pre>
+        </li>
+        <li><strong>Verify High-Precision Means:</strong>
+<pre><code># Calculate the mean for a parameter, e.g., 'gamma'
+mean_gamma = samples['gamma'].mean()
+std_gamma = samples['gamma'].std()
+print(f"Calculated gamma: {mean_gamma:.4f} +/- {std_gamma:.4f}")
+
+# Compare against the high-precision file
+hp_means = pd.read_csv("UIDT_HighPrecision_mean_values.csv", index_col=0)
+print(f"Stored mean: {hp_means.loc['gamma', 'mean']:.4f}")
+</code></pre>
+        </li>
+        <li><strong>Reproduce Plots:</strong>
+            <p>Use libraries like <code>matplotlib</code>, <code>seaborn</code>, or <code>corner</code> to regenerate the plots.</p>
+            <p><strong>Example (Corner Plot):</strong></p>
+<pre><code>import corner
+# Ensure 'corner' is installed: pip install corner
+fig = corner.corner(samples, labels=samples.columns, 
+                    quantiles=[0.16, 0.5, 0.84], 
+                    show_titles=True, title_fmt=".4f")
+fig.savefig("REPRODUCED_corner_plot.png")
+</code></pre>
+        </li>
+    </ol>
+
+    <hr>
+
+    <h2>4. License and Citation</h2>
+    <p>This dataset is licensed under the <strong>Creative Commons Attribution 4.0 International License (CC BY 4.0)</strong>.</p>
+    
+    <h3>How to Cite This Data</h3>
+    <p>If you use this dataset in your research, please cite the canonical UIDT v3.2/v3.3 paper:</p>
+    <blockquote>
+        <p><strong>Rietz, P. (2025). <em>Unified Information-Density Theory (UIDT) v3.2: Canonical Formulation, Mathematical Consistency, and Empirical Testability</em>. Zenodo. https://doi.org/10.5281/zenodo.17554179</strong></p>
+    </blockquote>
+
+</body>
+</html>
