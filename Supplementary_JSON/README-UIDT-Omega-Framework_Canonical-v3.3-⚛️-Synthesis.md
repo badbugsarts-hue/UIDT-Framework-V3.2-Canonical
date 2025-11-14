@@ -64,7 +64,8 @@ The core achievement is the unification of scales through the $\gamma$-invariant
 
 The framework is structured around the **HMC Simulation Core** and the **Numerical Verification Suite**.
 
-```mermaid
+mermaid
+~~~
 graph TD
     subgraph Theoretical Foundation
         A[UIDT Master Report (LaTeX)] --> B(Canonical Parameters: m_S, kappa, lambda_S);
@@ -91,7 +92,7 @@ graph TD
     end
 
     K & M --> N(Final Validation Report);
-```
+~~~
 
 ---
 
