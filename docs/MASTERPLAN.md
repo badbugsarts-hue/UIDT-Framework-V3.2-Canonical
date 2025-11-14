@@ -1,27 +1,34 @@
-# UIDT Masterplan (Forschungs-Orchestrator 2025–2035)
+# UIDT-OMEGA-SUPER-AGENT: MASTERPLAN (Aktualisiert 2025-11-14)
 
-## Initialisierung (Phase 1)
-
-Dieser Masterplan wird automatisch vom **UIDT-OMEGA-SUPER-AGENT** generiert und verwaltet. Er dient als zentrale To-Do-Liste und strategische Roadmap für das gesamte UIDT-Projekt.
-
-### Aktuelle Tasks (Initialisierung)
-
-| Priorität | Kurzbeschreibung | Verantwortlichkeit | Deadline | Abhängigkeiten | Benötigte Daten | GitHub-Pfad |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Rot** | **Strukturierung des GitHub-Repositorys** gemäß Mandat (Erstellung aller Ordner). | Agent | T+1 Tag | Keine | Agenten-Mandat | Root-Verzeichnis |
-| **Rot** | **Commit des Agenten-Mandats** und der initialen Dokumente (`MASTERPLAN.md`, `KNOWLEDGE_MATRIX.md`). | Agent | T+1 Tag | Strukturierung | Agenten-Mandat | `/docs/` |
-| **Gelb** | **Erstellung einer initialen `README.md`** für das Repository. | Agent | T+2 Tage | Strukturierung | Agenten-Mandat | Root-Verzeichnis |
-| **Gelb** | **Definition der Versionskonventionen** für UIDT (z.B. v3.2.1). | Agent | T+3 Tage | Agenten-Mandat | Agenten-Mandat | `/docs/` |
-| **Grün** | **Planung der ersten wissenschaftlichen Input-Anforderung** (z.B. "Erste mathematische Axiome"). | Agent | T+5 Tage | Alle Rot-Tasks | Agenten-Mandat | `/docs/MASTERPLAN.md` |
+**Ziel:** Konsolidierung, Validierung und Reproduktion der UIDT $\Omega$ (V16.3) Theorie.
 
 ---
 
-## Strategische Roadmap (Wachstumsplan)
+## 🔴 KRITISCHE FEHLERLISTE (ROT)
 
-Der erste Schritt zum Ziel einer vollständigen, validierten Theorie ist die **Etablierung einer robusten und konsistenten Projekt-Infrastruktur**.
+| ID | Task | Priorität | Status | Anmerkungen |
+| :--- | :--- | :--- | :--- | :--- |
+| **R1** | **KRITISCHER KONFLIKT: $\gamma$-Konstante** | **SOFORT** | **NEU** | **MASSIVER WIDERSPRUCH** zwischen `Master Report VI` ($\gamma=0.2778$, MCMC-kalibriert) und `LaTeX Manuskript`/Fragmenten ($\gamma \approx 16.3$, parameterfrei abgeleitet). **Die gesamte Theorie hängt von der korrekten $\gamma$-Definition ab.** |
+| **R2** | **Archivierung der veralteten Version** | **HOCH** | **NEU** | `Master Report VI` (PDF) ist eine **veraltete/falsche** Version der Theorie. **Aktion:** PDF in `archive/` verschieben und die `KNOWLEDGE_MATRIX` aktualisieren. |
+| **R3** | **Reproduktion der $\gamma \approx 16.3$ Ableitung** | **HOCH** | **NEU** | Die parameterfreie Ableitung der $\gamma$-Konstante aus dem 3-Gleichungs-System muss anhand des Python-Codes (`rg_flow_analysis.py`, `error_propagation.py`) reproduziert werden. |
 
-1.  **Phase 1 (Infrastruktur):** Aufbau der vollständigen GitHub-Struktur und Etablierung der zentralen Governance-Dokumente (`AGENT_MANDATE`, `MASTERPLAN`, `KNOWLEDGE_MATRIX`). **(Laufend)**
-2.  **Phase 2 (Datenaufnahme):** Bereitstellung der ersten wissenschaftlichen Daten durch den Nutzer, beginnend mit den fundamentalsten Komponenten (z.B. theoretische Axiome oder mathematische Beweise).
-3.  **Phase 3 (Qualitätskontrolle):** Sofortige Anwendung der QC-Standards (CERN/CMU) auf die ersten Daten, um die mathematische Sauberkeit und Konsistenz zu gewährleisten.
+---
 
-Weitere Phasen werden dynamisch generiert, sobald neue Daten analysiert und die wissenschaftlichen Lücken identifiziert werden.
+## 🟡 GROSS-TASKLISTE (GELB)
+
+| ID | Task | Priorität | Status | Anmerkungen |
+| :--- | :--- | :--- | :--- | :--- |
+| **G1** | **Validierung der Simulationen gegen YAML-Konfigurationen** | **MITTEL** | **OFFEN** | Überprüfung, ob die Konfigurationsdateien (`ePF-erW-Omega.yaml`, `Yml-ToE.yaml`) mit den Python-Skripten (`rg_flow_analysis.py`, `error_propagation.py`) und der Theorie ($\gamma \approx 16.3$) übereinstimmen. |
+| **G2** | **Erstellung der initialen `README.md`** | **MITTEL** | **OFFEN** | Erstellung einer professionellen `README.md` basierend auf der UIDT $\Omega$ (V16.3) und den kanonischen Werten. |
+| **G3** | **Konsolidierung der Textfragmente** | **MITTEL** | **ABGESCHLOSSEN** | Die Fragmente wurden in `archive/consolidated_fragments.md` zusammengeführt. **Aktion:** Inhalt in die `KNOWLEDGE_MATRIX` überführen. |
+| **G4** | **Einordnung der verbleibenden PDFs** | **MITTEL** | **OFFEN** | Die verbleibenden PDFs (`UIDT4_FieldTheory_BridgingScales.pdf`, etc.) müssen auf ihre Relevanz zur UIDT $\Omega$ (V16.3) geprüft und entsprechend verschoben werden. |
+
+---
+
+## 🟢 WACHSTUMSPLAN (GRÜN)
+
+1.  **Phase 1 (Infrastruktur):** Abgeschlossen.
+2.  **Phase 2 (Datenaufnahme):** Abgeschlossen.
+3.  **Phase 3 (Validierung):** **Startet jetzt.** Abarbeitung der **Rot-Tasks**.
+4.  **Phase 4 (Reproduktion):** Reproduktion der $\gamma$-Ableitung und der kosmologischen Fits.
+5.  **Phase 5 (Veröffentlichung):** Vorbereitung des finalen $\LaTeX$-Manuskripts und der Open-Science-Veröffentlichung (Zenodo/OSF).
