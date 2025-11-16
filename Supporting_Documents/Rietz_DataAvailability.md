@@ -5,7 +5,33 @@ All data, code, and supplementary materials supporting this manuscript are openl
 ---
 ## 📁 UIDT Repository Overview
 
-<table> <tr> <td><img src="https://img.shields.io/badge/Repository-UIDT--Framework--V3.2--Canonical-blue.svg" alt="Repository Badge"></td> <td><strong>Name:</strong> UIDT-Framework-V3.2-Canonical</td> </tr> <tr> <td><img src="https://img.shields.io/badge/Version-v3.3--Ultra--Report--v16.3-green.svg" alt="Version Badge"></td> <td><strong>Version:</strong> v3.3 (Canonical Core) / Ultra Report v16.3</td> </tr> <tr> <td><img src="https://img.shields.io/badge/Status-Technically--Closed-success.svg" alt="Status Badge"></td> <td><strong>Status:</strong> ✅ Technically Closed — All predictions verified and published</td> </tr> <tr> <td><img src="https://img.shields.io/badge/License-CC--BY--4.0-lightgrey.svg" alt="License Badge"></td> <td><strong>License:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td> </tr> <tr> <td><img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17554179-blue.svg" alt="DOI Badge"></td> <td><strong>DOI:</strong> <a href="https://doi.org/10.5281/zenodo.17554179">10.5281/zenodo.17554179</a></td> </tr> <tr> <td><img src="https://img.shields.io/badge/Author-Philipp--Rietz-blueviolet.svg" alt="Author Badge"></td> <td><strong>Author:</strong> Philipp Rietz</td> </tr> </table>
+<table>
+  <tr>
+    <td><a href="https://www.authorea.com/users/981782/articles/1356853-a-non-perturbative-field-theory-of-information-resolving-the-yang-mills-mass-gap-and-cosmological-tensions"><img src="https://img.shields.io/badge/Repository-UIDT--Framework--V3.2--Canonical-blue.svg" alt="Repository Badge"></a></td>
+    <td><strong>Name:</strong> UIDT-Framework-V3.2-Canonical</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.authorea.com/users/981782/articles/1356853-a-non-perturbative-field-theory-of-information-resolving-the-yang-mills-mass-gap-and-cosmological-tensions"><img src="https://img.shields.io/badge/Version-v3.3--Ultra--Report--v16.3-green.svg" alt="Version Badge"></a></td>
+    <td><strong>Version:</strong> v3.3 (Canonical Core) / Ultra Report v16.3</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.authorea.com/users/981782/articles/1356853-a-non-perturbative-field-theory-of-information-resolving-the-yang-mills-mass-gap-and-cosmological-tensions"><img src="https://img.shields.io/badge/Status-Technically--Closed-success.svg" alt="Status Badge"></a></td>
+    <td><strong>Status:</strong> ✅ Technically Closed — All predictions verified and published</td>
+  </tr>
+  <tr>
+    <td><a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC--BY--4.0-lightgrey.svg" alt="License Badge"></a></td>
+    <td><strong>License:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td>
+  </tr>
+  <tr>
+    <td><a href="[[https://doi.org/10.5281/zenodo.17554179](https://doi.org/10.17605/OSF.IO/WDYXC)](https://doi.org/10.17605/OSF.IO/WDYXC)"><img src="https://img.shields.io/badge/DOI-10.5281%2FOsf.17554179-blue.svg" alt="DOI Badge"></a></td>
+    <td><strong>DOI:</strong> <a href="[https://doi.org/10.5281/zenodo.17554179](https://doi.org/10.17605/OSF.IO/WDYXC)">10.17605/OSF.IO/WDYXC</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.authorea.com/users/981782/articles/1356853-a-non-perturbative-field-theory-of-information-resolving-the-yang-mills-mass-gap-and-cosmological-tensions"><img src="https://img.shields.io/badge/Author-Philipp--Rietz-blueviolet.svg" alt="Author Badge"></a></td>
+    <td><strong>Author:</strong> Philipp Rietz</td>
+  </tr>
+</table>
+
 
 ### 🔬 Description
 This repository contains the complete, canonical implementation of the Unified Information-Density Theory (UIDT Ω), including its parameter-free derivation of the Yang-Mills mass gap Δ and the universal scaling constant γ. It provides a mathematically closed, reproducible, and experimentally anchored solution to the Millennium Prize Problem and cosmological constant discrepancy.
