@@ -1,7 +1,56 @@
 
 # UIDT v3.3: Unified Information-Density Theory Ω
 
-<table> <tr> <td><img src="https://img.shields.io/badge/Repository-UIDT--Framework--V3.2--Canonical-blue.svg" alt="Repository Badge"></td> <td><strong>Name:</strong> UIDT-Framework-V3.2-Canonical</td> </tr> <tr> <td><img src="https://img.shields.io/badge/Version-v3.3--Ultra--Report--v16.3-green.svg" alt="Version Badge"></td> <td><strong>Version:</strong> v3.3 (Canonical Core) / Ultra Report v16.3</td> </tr> <tr> <td><img src="https://img.shields.io/badge/Status-Technically--Closed-success.svg" alt="Status Badge"></td> <td><strong>Status:</strong> ✅ Technically Closed — All predictions verified and published</td> </tr> <tr> <td><img src="https://img.shields.io/badge/License-CC--BY--4.0-lightgrey.svg" alt="License Badge"></td> <td><strong>License:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td> </tr> <tr> <td><img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17554179-blue.svg" alt="DOI Badge"></td> <td><strong>DOI:</strong> <a href="https://doi.org/10.5281/zenodo.17554179">10.5281/zenodo.17554179</a></td></tr><tr><td><img src="https://img.shields.io/badge/Author-Philipp--Rietz-blueviolet.svg" alt="Author Badge"></td></tr></table>
+<table>
+  <tr>
+    <td>
+      <a href="https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical">
+        <img src="https://img.shields.io/badge/Repository-UIDT--Framework--V3.2--Canonical-blue.svg" alt="Repository Badge">
+      </a>
+    </td>
+    <td><strong>Name:</strong> UIDT-Framework-V3.2-Canonical</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical/blob/main/README.md">
+        <img src="https://img.shields.io/badge/Version-v3.3--Ultra--Report--v16.3-green.svg" alt="Version Badge">
+      </a>
+    </td>
+    <td><strong>Version:</strong> v3.3 (Canonical Core) / Ultra Report v16.3</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical">
+        <img src="https://img.shields.io/badge/Status-Technically--Closed-success.svg" alt="Status Badge">
+      </a>
+    </td>
+    <td><strong>Status:</strong> ✅ Technically Closed — All predictions verified and published</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://creativecommons.org/licenses/by/4.0/">
+        <img src="https://img.shields.io/badge/License-CC--BY--4.0-lightgrey.svg" alt="License Badge">
+      </a>
+    </td>
+    <td><strong>License:</strong> CC BY 4.0</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://doi.org/10.5281/zenodo.17554179">
+        <img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17554179-blue.svg" alt="DOI Badge">
+      </a>
+    </td>
+    <td><strong>DOI:</strong> 10.5281/zenodo.17554179</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://orcid.org/0009-0007-4307-1609">
+        <img src="https://img.shields.io/badge/Author-Philipp--Rietz-blueviolet.svg" alt="Author Badge">
+      </a>
+    </td>
+    <td><strong>Author:</strong> Philipp Rietz — <a href="mailto:badbugs.arts@gmail.com">Kontakt</a></td>
+  </tr>
+</table>
 
 ## 🏆 Millennium Problem Resolution
 
