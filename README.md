@@ -115,7 +115,7 @@ Scaling Laws:
 
 For Researchers
 
-1. Read the manuscript: UIDT-Master-Report-Main-V3.2.txt
+1. Read the manuscript: [UIDT-Master-Report-Main-V3.2.txt](https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical/blob/main/UIDT-Master-Report-3.3_Synthesis%26Mathematical-Closure.pdf)
 2. Verify predictions: Run UIDT-3.3-Verification.py
 3. Cite this work: Use provided CITATION.cff
 
