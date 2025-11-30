@@ -1,9 +1,9 @@
 {
   "title": "UIDT v3.3: Unified Information-Density Theory - Complete Research Package",
-  "description": "Complete mathematical framework resolving Yang-Mills Mass Gap Millennium Problem with full experimental verification suite",
+  "description": "<p><strong>Complete mathematical framework resolving Yang-Mills Mass Gap Millennium Problem with full experimental verification suite.</strong></p><p>This authoritative release includes the canonical derivation, high-precision Monte Carlo verification data (residuals < 10⁻¹⁴), and the Gamma-Unification scaling laws (γ ≈ 16.339).</p>",
   "keywords": [
     "millennium-problems",
-    "yang-mills", 
+    "yang-mills",
     "mass-gap",
     "quantum-gravity",
     "gamma-scaling",
@@ -15,6 +15,7 @@
   "upload_type": "publication",
   "publication_type": "preprint",
   "access_right": "open",
+  "doi": "10.5281/zenodo.17596783",
   "creators": [
     {
       "name": "Rietz, Philipp",
@@ -24,18 +25,20 @@
   ],
   "contributors": [
     {
-      "name": "Theoretical Physics Community", 
+      "name": "Theoretical Physics Community",
       "type": "Other"
     }
   ],
   "related_identifiers": [
     {
-      "relation": "isPreviousVersionOf",
-      "identifier": "10.5281/zenodo.17554179"
+      "relation": "isNewVersionOf",
+      "identifier": "10.5281/zenodo.17554179",
+      "scheme": "doi"
     },
     {
-      "relation": "isSupplementedBy", 
-      "identifier": "10.17605/OSF.IO/WDYXC"
+      "relation": "isSupplementedBy",
+      "identifier": "10.17605/OSF.IO/WDYXC",
+      "scheme": "doi"
     }
   ],
   "communities": [
