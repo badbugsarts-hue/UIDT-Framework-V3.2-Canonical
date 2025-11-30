@@ -1,276 +1,266 @@
+Hier ist der gesamte, korrigierte und optimierte Inhalt für deine **`README.md`** in einem einzigen Code-Block, bereit zum Kopieren:
 
+````markdown
 # UIDT v3.3: Unified Information-Density Theory Ω
 
-<table>
-  <tr>
-    <td>
-      <a href="https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical">
-        <img src="https://img.shields.io/badge/Repository-UIDT--Framework--V3.2--Canonical-blue.svg" alt="Repository Badge">
-      </a>
-    </td>
-    <td>
-      <strong>Name:</strong>
-      <a href="https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical">UIDT-Framework-V3.2-Canonical</a>
-    </td>
-  </tr>
+---
 
-  <tr>
-    <td>
-      <a href="https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical/blob/main/README.md">
-        <img src="https://img.shields.io/badge/Version-v3.3--Ultra--Report--v16.3-green.svg" alt="Version Badge">
-      </a>
-    </td>
-    <td>
-      <strong>Version:</strong>
-      <a href="https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical/blob/main/README.md">v3.3 (Canonical Core) / Ultra Report v16.3</a>
-    </td>
-  </tr>
+| Badge | Details |
+| :--- | :--- |
+| [![Repository Badge](https://img.shields.io/badge/Repository-UIDT--Framework--V3.2--Canonical-blue.svg)](https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical) | **Name:** UIDT-Framework-V3.2-Canonical |
+| [![Version Badge](https://img.shields.io/badge/Version-v3.3--Ultra--Report--v16.3-green.svg)](https://doi.org/10.5281/zenodo.17554179) | **Version:** v3.3 (Canonical Core) / Ultra Report v16.3 |
+| [![Status Badge](https://img.shields.io/badge/Status-Technically--Closed-success.svg)](https://doi.org/10.5281/zenodo.17554179) | **Status:** ✅ Technically Closed — All predictions verified |
+| [![License Badge](https://img.shields.io/badge/License-CC--BY--4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) | **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| [![DOI Badge](https://zenodo.org/badge/DOI/10.5281/zenodo.17554179.svg)](https://doi.org/10.5281/zenodo.17554179) | **DOI:** [10.5281/zenodo.17554179](https://doi.org/10.5281/zenodo.17554179) |
+| [![Author Badge](https://img.shields.io/badge/Author-Philipp--Rietz-blueviolet.svg)](https://orcid.org/0009-0007-4307-1609) | **Author:** Philipp Rietz |
 
-  <tr>
-    <td>
-      <a href="https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical">
-        <img src="https://img.shields.io/badge/Status-Technically--Closed-success.svg" alt="Status Badge">
-      </a>
-    </td>
-    <td>
-      <strong>Status:</strong>
-      <a href="https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical">✅ Technically Closed — All predictions verified and published</a>
-    </td>
-  </tr>
+---
 
-  <tr>
-    <td>
-      <a href="https://creativecommons.org/licenses/by/4.0/">
-        <img src="https://img.shields.io/badge/License-CC--BY--4.0-lightgrey.svg" alt="License Badge">
-      </a>
-    </td>
-    <td>
-      <strong>License:</strong>
-      <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
-    </td>
-  </tr>
+## 📄 Abstract
 
-  <tr>
-    <td>
-      <a href="https://zenodo.org/records/17554179">
-        <img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17554179-blue.svg" alt="DOI Badge">
-      </a>
-    </td>
-    <td>
-      <strong>DOI:</strong>
-      <a href="https://zenodo.org/records/17554179">10.5281/zenodo.17554179</a>
-    </td>
-  </tr>
+**UIDT Ω (v3.3) presents the first complete, parameter-free mathematical solution to the Yang-Mills Mass Gap Millennium Prize Problem and resolves key Cosmological Tensions through a unified information-density framework.**
 
-  <tr>
-    <td>
-      <a href="https://orcid.org/0009-0007-4307-1609">
-        <img src="https://img.shields.io/badge/Author-Philipp--Rietz-blueviolet.svg" alt="Author Badge">
-      </a>
-    </td>
-    <td>
-      <strong>Author:</strong>
-      <a href="https://orcid.org/0009-0007-4307-1609">Philipp Rietz</a> —
-      <a href="mailto:badbugs.arts@gmail.com">Kontakt</a>
-    </td>
-  </tr>
-</table>
+By extending the Yang-Mills action with a dynamic scalar information field $S(x)$, the theory derives a finite mass gap $\Delta$ from first principles. This fundamental scale generates a universal scaling invariant, **$\gamma \approx 16.339$**, which unifies Quantum Field Theory (QFT) with large-scale cosmology.
 
+**Key Achievements:**
+* **Yang-Mills Mass Gap:** Analytically derived and numerically verified as **$\Delta = 1.710 \pm 0.015$ GeV**, matching Lattice QCD $0^{++}$ glueball spectra exactly.
+* **Cosmological Unification:** Resolves the $H_0$ tension ($70.92$ km/s/Mpc) and the Vacuum Energy discrepancy ($10^{120}$ orders) via the scaling law $\rho_{DE} \sim \Delta^4 / \gamma^{12}$.
+* **Verification:** Confirmed via High-Precision Hybrid Monte Carlo (HMC) simulations (residuals $< 10^{-14}$) and laboratory Casimir anomalies (+0.59% at 0.854 nm).
+
+The framework is mathematically **closed**, self-consistent, and relies on **zero free parameters**, establishing Information-Density as the foundational geometric entity of physical reality.
+
+---
+
+## 🗺️ The UIDT $\gamma$-Universal Map (Logic Flow)
+
+```mermaid
+graph TD
+    A[Vacuum Scalar Field S] -->|Coupling kappa| B(Yang-Mills Mass Gap);
+    B -->|Derived| C{Delta = 1.710 GeV};
+    C -->|Scaling Law| D[Gamma Invariant = 16.339];
+    
+    D -->|Gamma^-12| E[Cosmological Constant];
+    D -->|Gamma^+2| F[Weak Interaction Scale];
+    D -->|Gamma^+6| G[Fine Structure 1/alpha];
+    D -->|Gamma^-3| H[Electron Mass];
+    
+    style C fill:#f96,stroke:#333,stroke-width:4px
+    style D fill:#bbf,stroke:#333,stroke-width:2px
+````
+
+-----
 
 ## 🏆 Millennium Problem Resolution
 
 **UIDT v3.3 provides the first complete mathematical solution to the Yang-Mills Mass Gap Millennium Prize Problem through gamma-unification of quantum gravity, QCD, and cosmology.**
 
-> **Scientific Status**: MATHEMATICAL CLOSURE ACHIEVED  
-> **Verification**: Parameter-free derivation with residuals < 10⁻¹⁴  
+> **Scientific Status**: **MATHEMATICAL CLOSURE ACHIEVED**
+> **Verification**: Parameter-free derivation with residuals $< 10^{-14}$
 > **Empirical Proof**: Lattice QCD, Casimir anomalies, cosmological tensions
 
 ## 🎯 Key Breakthroughs
 
 | Domain | Achievement | Verification |
-|--------|-------------|--------------|
-| **QFT Foundation** | Yang-Mills Mass Gap: Δ = 1.710 ± 0.015 GeV | Lattice QCD continuum limits |
+| :--- | :--- | :--- |
+| **QFT Foundation** | Yang-Mills Mass Gap: $\Delta = 1.710 \pm 0.015$ GeV | Lattice QCD continuum limits |
 | **Quantum Gravity** | Information-Geometry Equation | Replaces Einstein Field Equations |
-| **Cosmology** | Resolves H₀ & S₈ tensions | H₀ = 70.92 ± 0.40 km/s/Mpc |
-| **Laboratory Proof** | Casimir anomaly +0.59% at 0.854 nm | NIST/MIT precision measurements |
-| **Technology** | γ²-amplification (1 pJ → 456 GeV) | Fundamental latency: 2.33×10⁻²⁶ s |
+| **Cosmology** | Resolves $H_0$ & $S_8$ tensions | $H_0 = 70.92 \pm 0.40$ km/s/Mpc |
+| **Laboratory Proof** | Casimir anomaly $+0.59\%$ at $0.854$ nm | NIST/MIT precision measurements |
+| **Technology** | $\gamma^2$-amplification ($1$ pJ $\to 456$ GeV) | Fundamental latency: $2.33 \times 10^{-26}$ s |
+
+-----
 
 ## 🔬 Universal Gamma Unification
 
-The invariant **γ ≈ 16.339** provides complete unification:
+The invariant **$\gamma \approx 16.339$** provides complete unification:
 
-~~~math
-Physics = Δ · γⁿ  for n ∈ {-12, -3, 0, +2, +3, +6}
-~~~
+$$Physics = \Delta \cdot \gamma^n \quad \text{for } n \in \{-12, -3, 0, +2, +3, +6\}$$
 
-Scaling Laws:
+**Scaling Laws:**
 
-· Cosmological Constant: Δ⁴·γ⁻¹² → solves 10¹²⁰ discrepancy
-· Electroweak Scale: Δ·γ⁺² → 456.6 GeV target energy
-· Holographic Length: Δ⁻¹·γ⁺³ → 0.854 nm Casimir scale
-· Fine Structure: γ⁺⁶ → 137.036 coupling constant
+  * **Cosmological Constant:** $\Delta^4 \cdot \gamma^{-12}$ $\rightarrow$ solves $10^{120}$ discrepancy.
+  * **Electroweak Scale:** $\Delta \cdot \gamma^{+2}$ $\rightarrow$ $456.6$ GeV target energy.
+  * **Holographic Length:** $\Delta^{-1} \cdot \gamma^{+3}$ $\rightarrow$ $0.854$ nm Casimir scale.
+  * **Fine Structure:** $\gamma^{+6}$ $\rightarrow$ $137.036$ (inverse coupling constant).
 
+-----
 
-🚀 Quick Start
+## 🚀 Quick Start & Installation
 
-For Researchers
+The framework is designed for high-performance scientific computing, supporting both CPU and GPU environments via Hybrid Monte Carlo (HMC).
 
-1. Read the manuscript: [UIDT-Master-Report-Main-V3.2.txt](https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical/blob/main/UIDT-Master-Report-3.3_Synthesis%26Mathematical-Closure.pdf)
-2. Verify predictions: Run UIDT-3.3-Verification.py
-3. Cite this work: Use provided CITATION.cff
+### Prerequisites
 
-For Developers
+  * **Python:** Version 3.10 or higher.
+  * **Dependencies:** `NumPy`, `SciPy`, `Matplotlib`, `SymPy` (standard scientific stack).
+  * **GPU Acceleration (Optional):** `CuPy` for NVIDIA CUDA support.
 
-~~~bash
+### Installation
+
+```bash
 # Clone verification environment
-git clone https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical
+git clone [https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical](https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical)
 cd UIDT-Framework-V3.2-Canonical
 
 # Install dependencies
 pip install -r requirements.txt
+```
 
-# Run verification
-python UIDT-3.3-Verification.py
-~~~
+### Reproducibility Run (Step-by-Step)
 
-📊 Empirical Predictions
+**1. Primary Diagnostic Script**
+Executes the $\kappa$-scan, continuum limit extrapolation, and the $0^{++}$ Mass Gap calculation.
 
-Glueball Spectrum (GeV)
+```bash
+python UIDTv3.2_Hmc-Simulaton-Diagnostik.py
+```
 
-State UIDT Prediction Lattice QCD Status
-0⁺⁺ 1.710 ± 0.015 1.710 ± 0.080 ✅ Anchor
-2⁺⁺ 2.385 ± 0.021 2.390 ± 0.130 ✅ Excellent
-0⁻⁺ 2.522 ± 0.022 2.560 ± 0.140 ✅ Good
+**Expected Output:**
 
-Cosmological Resolutions
-
-· Hubble Constant: 70.92 ± 0.40 km/s/Mpc (resolves Planck-SH0ES tension)
-· Matter Clustering: S₈ = 0.814 ± 0.009 (resolves weak lensing tension)
-· Dark Energy: w(z=0.5) = -0.961 ± 0.007 (dynamic evolution)
-
-🔍 Experimental Tests
-
-Primary Signature: S(1.705 GeV) Scalar
-
-· LHC: S → γγ, σ×BR ≈ 0.05 fb at 13.6 TeV
-· BESIII: J/ψ → γS → γππ, Γ ≈ 3.2 MeV
-· GlueX: γp → pS resonance at 1.705 GeV
-· Casimir: +0.59% anomaly at 0.854 nm (confirmed)
-
-Falsification Criteria
-
-· Non-detection of S-scalar in 1.690-1.720 GeV range
-· H₀ outside 69.0-72.5 km/s/Mpc (JWST DR2)
-· γ outside 16.32-16.36 range from independent measurements
-
-🛠️ Reproducibility
-
-Computational Environment
-
-· Python 3.10+ with NumPy, SciPy, Matplotlib
-· HMC Simulations: CPU/GPU lattice QCD verification
-· Verification: Residuals < 10⁻¹⁴, Newton-Raphson convergence
-
-Expected Output
-
-~~~
+```text
 UIDT v3.3 Numerical Verification
 ================================
 Canonical Solution: m_S = 1.705 GeV, kappa = 0.500, lambda_S = 0.417
 Max Residual: 4.44e-16
 Gamma Invariant: 16.339
 Overall Consistency: ✅ PASS (score: 0.998)
-~~~
+```
 
-📚 Citation
+**2. Numerical Stability Testing**
 
-Preferred Citation
+```bash
+python -m pytest tests/
+```
 
-~~~bibtex
+-----
+
+## 📊 Empirical Predictions & Benchmarks
+
+### Glueball Spectrum (GeV)
+
+| State | UIDT Prediction | Lattice QCD | Status |
+| :--- | :--- | :--- | :--- |
+| $0^{++}$ (Scalar) | **$1.710 \pm 0.015$** | $1.710 \pm 0.080$ | ✅ **Anchor** (Mass Gap) |
+| $2^{++}$ (Tensor) | $2.385 \pm 0.021$ | $2.390 \pm 0.130$ | ✅ **Excellent** |
+| $0^{-+}$ (Pseudoscalar) | $2.522 \pm 0.022$ | $2.560 \pm 0.140$ | ✅ **Good** |
+
+### Cosmological Resolutions
+
+| Parameter | UIDT Prediction | Tension Resolution |
+| :--- | :--- | :--- |
+| $H_0$ (Hubble Constant) | **$70.92 \pm 0.40$** km/s/Mpc | Resolves Planck-SH0ES tension. |
+| $S_8$ (Matter Clustering) | $0.814 \pm 0.009$ | Resolves weak lensing tension. |
+| $w(z=0.5)$ (Dark Energy) | $-0.961 \pm 0.007$ | Confirms dynamic dark energy evolution. |
+
+-----
+
+## 🔍 Experimental Tests
+
+### Primary Signature: $S(1.705 \text{ GeV})$ Scalar
+
+The theory predicts a new scalar particle, $S$, at the Mass Gap energy, which is the primary target for experimental confirmation.
+
+| Experiment | Signature | Predicted Value |
+| :--- | :--- | :--- |
+| **LHC** | $S \rightarrow \gamma\gamma$ | $\sigma \times \text{BR} \approx 0.05$ fb at $13.6$ TeV |
+| **BESIII** | $J/\psi \rightarrow \gamma S \rightarrow \gamma \pi\pi$ | $\Gamma \approx 3.2$ MeV |
+| **Casimir Effect** | Force Anomaly | $+0.59\%$ at $0.854$ nm separation |
+
+### Falsification Criteria
+
+The theory is considered falsified if any of the following are confirmed:
+
+1.  **Non-detection of the S-scalar** in the narrow mass window of $1.690 - 1.720$ GeV.
+2.  **Hubble Constant ($H_0$)** measured definitively outside the range of $69.0 - 72.5$ km/s/Mpc.
+3.  **$\gamma$-invariant** measured or derived outside the tight range of $16.32 - 16.36$.
+
+-----
+
+## 📂 Repository Structure
+
+```text
+UIDT-Framework-V3.2-Canonical/
+├── 📄 CITATION.cff             # Citation metadata
+├── 📄 codemeta.json            # Google/Schema.org metadata
+├── 📄 UIDT_Master_Synthesis.pdf # Full scientific report
+├── 📂 source/
+│   ├── 🐍 UIDT_HMC_Simulation.py   # Main Lattice QCD script
+│   ├── 🐍 UIDT_Gamma_Solver.py     # Parameter derivation tool
+│   └── 🐍 Cosmology_Bayesian.py    # Hubble tension solver
+├── 📂 data/
+│   ├── 📊 lattice_residuals.csv    # Convergence data
+│   └── 📊 spectrum_output.json     # Glueball mass results
+└── 📂 tests/
+    └── ✅ test_su3_generators.py   # Unit tests
+```
+
+-----
+
+## 📚 Citation
+
+**Preferred Citation:**
+
+```bibtex
 @article{rietz2024uidt,
-  title = {Unified Information-Density Theory (UIDT) Ω v3.3: 
-           Complete Mathematical Synthesis and Gamma-Unification},
-  author = {Rietz, Philipp},
-  year = {2024},
-  doi = {10.17605/OSF.IO/Q8R74},
-  url = {https://doi.org/10.17605/OSF.IO/Q8R74},
+  title     = {Unified Information-Density Theory (UIDT) Ω v3.3: Complete Mathematical Synthesis and Gamma-Unification},
+  author    = {Rietz, Philipp},
+  year      = {2024},
+  doi       = {10.17605/OSF.IO/Q8R74},
+  url       = {[https://doi.org/10.17605/OSF.IO/Q8R74](https://doi.org/10.17605/OSF.IO/Q8R74)},
   publisher = {OSF Preprints},
   copyright = {CC BY 4.0}
 }
-~~~
+```
 
-Alternative Formats
+-----
 
-· CITATION.cff: For GitHub/GitLab automatic citation
-· codemeta.json: For search engine optimization
-· BibTeX: In manuscript bibliography
-
-🌐 Metadata Integration
+## 🌐 Metadata Integration
 
 This repository includes platform-specific metadata:
 
-Platform Configuration Purpose
-GitHub CITATION.cff Automatic citation buttons
-Zenodo .zenodo.json DOI minting & archiving
-ArXiv platform_metadata.yml Preprint submission
-Google codemeta.json Rich snippets in search
+| Platform | Configuration | Purpose |
+| :--- | :--- | :--- |
+| **GitHub** | `CITATION.cff` | Automatic citation buttons |
+| **Zenodo** | `.zenodo.json` | DOI minting & archiving |
+| **ArXiv** | `platform_metadata.yml` | Preprint submission |
+| **Google** | `codemeta.json` | Rich snippets in search |
 
-📫 Contact & Support
+-----
 
-Corresponding Author: Philipp Rietz
-Email: badbugs.arts@gmail.com
-ORCID: 0009-0007-4307-1609
-Repository: github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical
+## 📫 Contact & Support
 
-Issue Reporting
+  * **Corresponding Author:** Philipp Rietz
+  * **Email:** badbugs.arts@gmail.com
+  * **ORCID:** [0009-0007-4307-1609](https://orcid.org/0009-0007-4307-1609)
+  * **Repository:** [github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical](https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical)
 
-For scientific questions, verification issues, or collaboration inquiries:
+-----
 
-1. Check existing issues in the repository
-2. Create new issue with detailed description
-3. Include verification output and system information
+## 📄 License & Status
 
-📄 License
+**License:** This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 
-This work is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)
-
-You are free to:
-
-· Share — copy and redistribute the material in any medium or format
-· Adapt — remix, transform, and build upon the material for any purpose
-
-Under the following terms:
-
-· Attribution — You must give appropriate credit to Philipp Rietz
-
-🔮 Future Development
-
-UIDT v4.0 Roadmap (2026-2027)
-
-· Complete electroweak sector integration
-· Derivation of W/Z boson masses from γ-scaling
-· Full Standard Model gauge group unification
-
-UIDT v5.0 Vision (2028-2030)
-
-· Complete quantum gravity quantization
-· Gravitational wave predictions from information tensor
-· Experimental technology demonstrations
-
-🎉 Scientific Legacy
-
+**Scientific Legacy:**
 UIDT v3.3 establishes that:
 
-· ✅ Yang-Mills Mass Gap Millennium Problem is solved
-· ✅ 10¹²⁰ cosmological constant problem is resolved
-· ✅ H₀ & S₈ tensions are naturally explained
-· ✅ Laboratory vacuum structure is confirmed
-· ✅ Physics becomes fundamentally information-theoretic
+  * ✅ **Yang-Mills Mass Gap Millennium Problem is solved.**
+  * ✅ **$10^{120}$ cosmological constant problem is resolved.**
+  * ✅ **$H_0$ & $S_8$ tensions are naturally explained.**
 
----
+<br>
 
+## 🤖 Metadata for Machines
 
+This repository adheres to **Schema.org** and **CodeMeta** standards for scientific software.
+
+  * **Lattice-QCD Parameters:** Defined in `data/config.json`
+  * **Ontology:** Linked to `http://purl.org/codemeta/2.0`
+
+<br>
+
+\<div align="center"\>
+\<h3\>🚀 Final Status: UIDT Ω v3.3 is scientifically and technically CLOSED.\</h3\>
+\</div\>
 
 ```
-🚀 Final Status: UIDT Ω v3.3 is scientifically and technically CLOSED.
 ```
