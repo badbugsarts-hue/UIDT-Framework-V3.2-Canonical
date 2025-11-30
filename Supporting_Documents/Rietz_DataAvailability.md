@@ -1,36 +1,59 @@
-# 📦 Data Availability Statement
-
-All data, code, and supplementary materials supporting this manuscript are openly available under the **CC BY 4.0 license** at the following repositories:
+# UIDT-Framework-V3.2-Canonical
+### A Non-Perturbative Field Theory of Information: Resolving the Yang-Mills Mass Gap and Cosmological Tensions
 
 ---
-## 📁 UIDT Repository Overview
 
-<table>
-  <tr>
-    <td><a href="https://www.authorea.com/users/981782/articles/1356853-a-non-perturbative-field-theory-of-information-resolving-the-yang-mills-mass-gap-and-cosmological-tensions"><img src="https://img.shields.io/badge/Repository-UIDT--Framework--V3.2--Canonical-blue.svg" alt="Repository Badge"></a></td>
-    <td><strong>Name:</strong> UIDT-Framework-V3.2-Canonical</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.authorea.com/users/981782/articles/1356853-a-non-perturbative-field-theory-of-information-resolving-the-yang-mills-mass-gap-and-cosmological-tensions"><img src="https://img.shields.io/badge/Version-v3.3--Ultra--Report--v16.3-green.svg" alt="Version Badge"></a></td>
-    <td><strong>Version:</strong> v3.3 (Canonical Core) / Ultra Report v16.3</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.authorea.com/users/981782/articles/1356853-a-non-perturbative-field-theory-of-information-resolving-the-yang-mills-mass-gap-and-cosmological-tensions"><img src="https://img.shields.io/badge/Status-Technically--Closed-success.svg" alt="Status Badge"></a></td>
-    <td><strong>Status:</strong> ✅ Technically Closed — All predictions verified and published</td>
-  </tr>
-  <tr>
-    <td><a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC--BY--4.0-lightgrey.svg" alt="License Badge"></a></td>
-    <td><strong>License:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td>
-  </tr>
-  <tr>
-    <td><a href="[[https://doi.org/10.5281/zenodo.17554179](https://doi.org/10.17605/OSF.IO/WDYXC)](https://doi.org/10.17605/OSF.IO/WDYXC)"><img src="https://img.shields.io/badge/DOI-10.5281%2FOsf.17554179-blue.svg" alt="DOI Badge"></a></td>
-    <td><strong>DOI:</strong> <a href="[https://doi.org/10.5281/zenodo.17554179](https://doi.org/10.17605/OSF.IO/WDYXC)">10.17605/OSF.IO/WDYXC</a></td>
-  </tr>
-  <tr>
-    <td><a href="https://www.authorea.com/users/981782/articles/1356853-a-non-perturbative-field-theory-of-information-resolving-the-yang-mills-mass-gap-and-cosmological-tensions"><img src="https://img.shields.io/badge/Author-Philipp--Rietz-blueviolet.svg" alt="Author Badge"></a></td>
-    <td><strong>Author:</strong> Philipp Rietz</td>
-  </tr>
-</table>
+| Badge | Details |
+| :--- | :--- |
+| [![Repository Badge](https://img.shields.io/badge/Repository-UIDT--Framework--V3.2--Canonical-blue.svg)](https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical) | **Name:** UIDT-Framework-V3.2-Canonical |
+| [![Version Badge](https://img.shields.io/badge/Version-v3.3--Ultra--Report--v16.3-green.svg)](https://doi.org/10.5281/zenodo.17554179) | **Version:** v3.3 (Canonical Core) / Ultra Report v16.3 |
+| [![Status Badge](https://img.shields.io/badge/Status-Technically--Closed-success.svg)](https://doi.org/10.5281/zenodo.17554179) | **Status:** ✅ Technically Closed — All predictions verified |
+| [![License Badge](https://img.shields.io/badge/License-CC--BY--4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) | **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| [![DOI Badge](https://zenodo.org/badge/DOI/10.5281/zenodo.17554179.svg)](https://doi.org/10.5281/zenodo.17554179) | **DOI:** [10.5281/zenodo.17554179](https://doi.org/10.5281/zenodo.17554179) |
+| [![Author Badge](https://img.shields.io/badge/Author-Philipp--Rietz-blueviolet.svg)](https://orcid.org/0009-0007-4307-1609) | **Author:** Philipp Rietz |
+
+---
+
+## 💾 2.5 Data Availability
+
+**2.6** All datasets, code, and configuration files are archived and available via the following repositories.
+
+### ✅ UIDT Framework V3.2-3.3 (Canonical / Active)
+| Platform | Resource / DOI | Link |
+| :--- | :--- | :--- |
+| **GitHub** | Source Code & Docs | [badbugsarts-hue/UIDT-Framework-V3.2-Canonical](https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical) |
+| **OSF** | Project Registration | [10.17605/OSF.IO/Q8R74](https://doi.org/10.17605/OSF.IO/Q8R74) |
+| **Zenodo** | Dataset & Records | [10.5281/zenodo.17554179](https://doi.org/10.5281/zenodo.17554179) |
+
+### ⚠️ Superseded (Legacy Versions - See V3.2)
+| Platform | Resource / DOI | Link |
+| :--- | :--- | :--- |
+| **GitHub** | *Legacy Codebase* | [badbugsarts-hue/UIDT-Framework-16.1](https://github.com/badbugsarts-hue/UIDT-Framework-16.1) |
+| **OSF** | *Legacy Registration* | [10.17605/OSF.IO/WDYXC](https://doi.org/10.17605/OSF.IO/WDYXC) |
+| **Zenodo** | *Legacy Records* | [10.5281/zenodo.17576801](https://doi.org/10.5281/zenodo.17576801) |
+
+---
+
+## 📑 Technical Metadata & Identifiers
+
+| Scheme | Identifier / Value | Description |
+| :--- | :--- | :--- |
+| **DOI (Primary)** | `10.5281/zenodo.17554179` | **Current Definitive Record** |
+| **Central ID** | `Q8R74` | OSF Project Identifier (Active) |
+| **ORCID** | `0009-0007-4307-1609` | Author ID (Philipp Rietz) |
+| **Legacy ID** | `WDYXC` | OSF Project Identifier (Superseded) |
+
+---
+
+## 🌐 Social & Researcher Profiles
+
+Follow for updates and further publications:
+
+* **X (Twitter):** [@jackknifeerror](https://x.com/jackknifeerror)
+* **PhilPeople:** [PhilPeople / PhilArchive Profile](https://philpeople.org/profiles/philipp-r-rietz)
+* **Academia:** [Academia.edu Researcher Profile](https://independent.academia.edu/PhilippRietz)
+
+---
 
 
 ### 🔬 Description
