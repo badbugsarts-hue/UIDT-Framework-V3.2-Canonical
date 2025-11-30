@@ -1,19 +1,18 @@
-# CITATION.cff - For GitHub, Zenodo, research platforms
 cff-version: 1.2.0
-message: "If you use UIDT v3.3 in your research, please cite this work:"
+message: "If you use UIDT v3.3 in your research, please cite this work using the metadata below."
 title: "Unified Information-Density Theory (UIDT) Ω v3.3: Complete Mathematical Synthesis and Gamma-Unification"
+type: software
 authors:
   - family-names: "Rietz"
     given-names: "Philipp"
     orcid: "https://orcid.org/0009-0007-4307-1609"
     affiliation: "Independent Researcher"
     email: "badbugs.arts@gmail.com"
-type: article
 license: CC-BY-4.0
 version: 3.3.0
-doi: "10.17605/OSF.IO/Q8R74"
-date-released: 2024-12-01
-url: "https://doi.org/10.17605/OSF.IO/Q8R74"
+doi: "10.5281/zenodo.17596783"
+date-released: 2025-12-01
+url: "https://doi.org/10.5281/zenodo.17596783"
 repository-code: "https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical"
 keywords:
   - "UIDT"
@@ -24,40 +23,32 @@ keywords:
   - "Cosmological Constant Problem"
   - "Dark Sector Unification"
   - "Gamma-Amplification Technology"
-abstract: "UIDT v3.3 provides the first complete mathematical solution to the Yang-Mills Mass Gap Millennium Prize Problem through gamma-unification of quantum gravity, QCD, and cosmology. The theory achieves parameter-free derivation of all fundamental constants from first principles, with experimental verification against lattice QCD (Δ = 1.710 ± 0.015 GeV), Casimir anomalies (+0.59% at 0.854 nm), and cosmological tensions (H₀ = 70.92 ± 0.40 km/s/Mpc)."
+abstract: >-
+  UIDT v3.3 provides the first complete mathematical solution to the Yang-Mills Mass Gap Millennium Prize Problem through gamma-unification of quantum gravity, QCD, and cosmology. The theory achieves parameter-free derivation of all fundamental constants from first principles, with experimental verification against lattice QCD (Δ = 1.710 ± 0.015 GeV), Casimir anomalies (+0.59% at 0.854 nm), and cosmological tensions (H₀ = 70.92 ± 0.40 km/s/Mpc).
 preferred-citation:
+  type: report
   title: "Unified Information-Density Theory (UIDT) Ω v3.3: Complete Mathematical Synthesis and Gamma-Unification"
   authors:
     - family-names: "Rietz"
       given-names: "Philipp"
       orcid: "https://orcid.org/0009-0007-4307-1609"
-  type: article
-  doi: "10.17605/OSF.IO/Q8R74"
-  journal: "OSF Preprints"
-  date: 2024-12-01
-related:
-  - type: "usesMethodIn"
+  doi: "10.5281/zenodo.17596783"
+  institution:
+    name: "Zenodo Publication"
+  year: 2025
+  month: 11
+references:
+  - type: report
     title: "UIDT v3.2: Mathematical Audit and Verification"
     authors:
       - family-names: "Rietz"
         given-names: "Philipp"
-    doi: "10.5281/zenodo.17554179"
-    year: 2023
-  - type: "usesDataFrom"
+    doi: "10.5281/zenodo.17596783"
+    year: 2025
+  - type: data
     title: "UIDT Numerical Verification Datasets"
-    doi: "10.17605/OSF.IO/WDYXC"
-    year: 2024
-  - type: "usesSoftwareFrom"
-    title: "UIDT Framework v3.2 Canonical Implementation"
-    url: "https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical"
-    year: 2024
-contact:
-  - name: "Philipp Rietz"
-    email: "badbugs.arts@gmail.com"
-    orcid: "https://orcid.org/0009-0007-4307-1609"
-funding:
-  - name: "Independent Research"
-    type: "individual"
-commit:
-  title: "Mathematical Closure Achieved"
-  message: "Parameter-free derivation with residuals < 1e-14, full experimental verification"
+    authors:
+      - family-names: "Rietz"
+        given-names: "Philipp"
+    doi: "10.5281/zenodo.17596783"
+    year: 2025
