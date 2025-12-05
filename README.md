@@ -1,6 +1,3 @@
-Hier ist der gesamte, korrigierte und optimierte Inhalt für deine **`README.md`** in einem einzigen Code-Block, bereit zum Kopieren:
-
-````markdown
 # UIDT v3.3: Unified Information-Density Theory Ω
 
 ---
