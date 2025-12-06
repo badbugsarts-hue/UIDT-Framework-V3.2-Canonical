@@ -2,56 +2,56 @@
 <x:xmpmeta xmlns:x="adobe:ns:meta/">
   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 
-    <!-- Dublin Core Metadata -->
     <rdf:Description rdf:about=""
       xmlns:dc="http://purl.org/dc/elements/1.1/">
-      <dc:title>Complete Mathematical Synthesis and Gamma-Unification of UIDT v3.3</dc:title>
+      <dc:title>UIDT v3.4: Vacuum Information Density as the Fundamental Geometric Scalar</dc:title>
       <dc:creator>
         <rdf:Seq>
           <rdf:li>Philipp Rietz</rdf:li>
         </rdf:Seq>
       </dc:creator>
-      <dc:identifier>ORCID:0009-0007-4307-1609</dc:identifier>
+      <dc:identifier>doi:10.5281/zenodo.17835201</dc:identifier>
+      <dc:relation>ORCID:0009-0007-4307-1609</dc:relation>
       <dc:description>
-        UIDT v3.3 achieves parameter-free unification of QFT and GR via γ ≈ 16.339,
-        resolves the Yang–Mills mass gap at 1.710 ± 0.015 GeV, and reconciles cosmological tensions.
+        UIDT v3.4 (Conservative Revision) proposes a theoretical framework where vacuum information density S(x) generates the Yang-Mills mass gap via non-minimal coupling. Derives Δ = 1.710 ± 0.015 GeV and γ ≈ 16.339, consistent with Lattice QCD (z-score 0.4).
       </dc:description>
       <dc:subject>
         <rdf:Bag>
-          <rdf:li>Quantum Physics</rdf:li>
-          <rdf:li>Superconductivity</rdf:li>
-          <rdf:li>Quantum Computing</rdf:li>
-          <rdf:li>Gamma Scaling</rdf:li>
           <rdf:li>Yang-Mills Mass Gap</rdf:li>
-          <rdf:li>Quantum Gravity</rdf:li>
+          <rdf:li>Information-Density Field</rdf:li>
+          <rdf:li>Vacuum Structure</rdf:li>
+          <rdf:li>Lattice QCD</rdf:li>
+          <rdf:li>Gamma Scaling</rdf:li>
+          <rdf:li>Glueball Spectrum</rdf:li>
+          <rdf:li>Quantum Field Theory</rdf:li>
           <rdf:li>Casimir Anomaly</rdf:li>
+          <rdf:li>Hubble Tension</rdf:li>
         </rdf:Bag>
       </dc:subject>
-      <dc:date>2025-11-13</dc:date>
+      <dc:date>2025-12-01</dc:date>
+      <dc:publisher>Zenodo / OSF Preprints</dc:publisher>
     </rdf:Description>
 
-    <!-- Rights / License -->
     <rdf:Description rdf:about=""
       xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/">
       <xmpRights:Marked>True</xmpRights:Marked>
       <xmpRights:WebStatement>https://creativecommons.org/licenses/by/4.0/</xmpRights:WebStatement>
       <xmpRights:UsageTerms>Creative Commons Attribution 4.0 International (CC BY 4.0)</xmpRights:UsageTerms>
+      <xmpRights:Owner>Philipp Rietz</xmpRights:Owner>
     </rdf:Description>
 
-    <!-- Basic XMP Info -->
     <rdf:Description rdf:about=""
       xmlns:xmp="http://ns.adobe.com/xap/1.0/">
       <xmp:CreatorTool>LaTeX + pdfTeX</xmp:CreatorTool>
-      <xmp:CreateDate>2025-11-13T10:40:00+01:00</xmp:CreateDate>
-      <xmp:ModifyDate>2025-11-13T10:40:00+01:00</xmp:ModifyDate>
-      <xmp:MetadataDate>2025-11-13T10:40:00+01:00</xmp:MetadataDate>
+      <xmp:CreateDate>2025-12-01T12:00:00+01:00</xmp:CreateDate>
+      <xmp:ModifyDate>2025-12-01T12:00:00+01:00</xmp:ModifyDate>
+      <xmp:MetadataDate>2025-12-01T12:00:00+01:00</xmp:MetadataDate>
     </rdf:Description>
 
-    <!-- PDF Identification -->
     <rdf:Description rdf:about=""
       xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
-      <pdf:Producer>pdfTeX 2025</pdf:Producer>
-      <pdf:Keywords>UIDT, Quantum Physics, Gamma Scaling, Yang-Mills, Quantum Gravity, Superconductivity</pdf:Keywords>
+      <pdf:Producer>pdfTeX 2025 / UIDT Framework</pdf:Producer>
+      <pdf:Keywords>Yang-Mills Mass Gap, Information-Density, Lattice QCD, Gamma Scaling, Quantum Gravity, Casimir Anomaly</pdf:Keywords>
     </rdf:Description>
 
   </rdf:RDF>
