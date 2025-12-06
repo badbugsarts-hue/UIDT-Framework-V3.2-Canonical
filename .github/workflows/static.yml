@@ -1,43 +1,103 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Static CI / Metadata & Integrity Audit
 
+# Trigger on push to main or pull requests
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
 
 jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  # -----------------------------------------------------------------
+  # JOB 1: METADATA VALIDATION (CRITICAL FOR ZENODO/CITE)
+  # -----------------------------------------------------------------
+  metadata-audit:
+    name: 🛡️ Metadata Integrity
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
         with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          python-version: "3.10"
+
+      - name: Install Validation Tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install cffconvert
+
+      # 1. Validate CITATION.cff (Crucial for GitHub citation button)
+      - name: Validate CITATION.cff
+        run: |
+          if [ -f CITATION.cff ]; then
+            cffconvert --validate
+            echo "✅ CITATION.cff is syntactically valid."
+          else
+            echo "❌ CITATION.cff missing!"
+            exit 1
+          fi
+
+      # 2. Validate .zenodo.json (Crucial for DOI minting)
+      - name: Validate Zenodo Metadata (.zenodo.json)
+        run: |
+          if [ -f .zenodo.json ]; then
+            # Simple JSON syntax check using python
+            python -c "import json, sys; json.load(open('.zenodo.json'))"
+            echo "✅ .zenodo.json is valid JSON."
+          else
+            echo "⚠️ .zenodo.json missing (Optional but recommended)."
+          fi
+
+      # 3. Validate codemeta.json (For Google Scholar / SEO)
+      - name: Validate CodeMeta (codemeta.json)
+        run: |
+          if [ -f codemeta.json ]; then
+            python -c "import json, sys; json.load(open('codemeta.json'))"
+            echo "✅ codemeta.json is valid JSON."
+          fi
+
+  # -----------------------------------------------------------------
+  # JOB 2: CODE QUALITY & SYNTAX CHECK
+  # -----------------------------------------------------------------
+  code-quality:
+    name: 🐍 Python Syntax & Linting
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install Linter
+        run: |
+          pip install flake8
+
+      # Checks for syntax errors in all .py files (e.g., UIDT-3.3-Verification.py)
+      - name: Check Python Syntax (Flake8)
+        run: |
+          # Stop the build if there are Python syntax errors or undefined names
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+          
+          # Warning only for style issues (line length, etc.)
+          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+  # -----------------------------------------------------------------
+  # JOB 3: LINK INTEGRITY (README & DOCS)
+  # -----------------------------------------------------------------
+  link-check:
+    name: 🔗 Link Integrity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v1.9.0
+        with:
+          # Check all markdown files for dead links
+          args: --verbose --no-progress './**/*.md'
+          fail: false # Don't break build on dead links, just warn
