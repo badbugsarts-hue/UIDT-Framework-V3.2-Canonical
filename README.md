@@ -263,14 +263,6 @@ UIDT v3.5 establishes that:
   * ✅ **$10^{120}$ cosmological constant problem is partially suppressed.**
   * ✅ **$H_0$ & $S_8$ tensions are naturally explained.**
 
- 
-
- 
- 🚀 Final Status: UIDT v3.5 is scientifically robust and technically CLOSED.\</h3\>
- 
-
-```
-```
 
 ## 🤖 Metadata for Machines
 
@@ -279,9 +271,10 @@ This repository adheres to **Schema.org** and **CodeMeta** standards for scienti
   * **Lattice-QCD Parameters:** Defined in `data/config.json`
   * **Ontology:** Linked to `http://purl.org/codemeta/2.0`
 
- 
+ ```
  🚀 Final Status: UIDT Ω v3.3 is scientifically and technically CLOSED.\</h3\>
  
+ ```
 
-```
-```
+
+
