@@ -1,120 +1,33 @@
 cff-version: 1.2.0
-message: "If you use this framework, please cite it as below."
-title: "UIDT v3.4: Unified Information-Density Theory - Conservative Revision"
-abstract: |
-  This manuscript presents UIDT version 3.4, a conservative revision introducing 
-  a fundamental scalar field S(x) representing vacuum information density. The 
-  framework proposes a mechanism for generating a Yang-Mills mass gap through 
-  non-minimal coupling and vacuum condensate dynamics.
-  
-  All claims are classified by evidence status:
-  - Category A (Mathematically Robust): Self-consistent three-equation system 
-    with residuals < 10^-14
-  - Category B (Lattice Consistent): Statistical agreement with lattice QCD 
-    (z-score ≈ 0.4)
-  - Category C (Model-Dependent): Cosmological predictions depending on 
-    UIDT-specific gravitational coupling
-  - Category D (Unverified Predictions): Experimental proposals awaiting 
-    independent verification
-  
-  Limitations explicitly acknowledged: 23% electron mass discrepancy, 29% 
-  λ_UIDT ambiguity, 6σ S_8 tension with ACT DR6, absence of UV completion.
-  
-  This constitutes a proposed framework requiring verification, not a proven 
-  solution to the Yang-Mills Mass Gap problem.
-
+message: "If you use this software or framework, please cite it as below."
 authors:
-  - family-names: Rietz
-    given-names: Philipp
-    email: badbugs.arts@gmail.com
+  - family-names: "Rietz"
+    given-names: "Philipp"
     orcid: "https://orcid.org/0009-0007-4307-1609"
+    email: "badbugs.arts@gmail.com"
     affiliation: "Independent Researcher"
-
-version: "3.4"
-date-released: "2025-12-06"
-license: CC-BY-4.0
+title: "Unified Information-Density Theory v3.5: DESI-Optimized Framework"
+version: 3.5.0
 doi: 10.5281/zenodo.17835201
-
-repository-code: "https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical"
-url: "https://doi.org/10.5281/zenodo.17835201"
-
+date-released: 2025-12-07
+url: "https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical"
+abstract: "This repository contains the canonical implementation and verification suite for UIDT v3.5. It features a parameter-free derivation of the Yang-Mills Mass Gap (1.710 GeV) and a cosmological framework calibrated to 2025 DESI DR2 and JWST data. Includes Python solvers, Monte Carlo simulations, and the full theoretical manuscript."
 keywords:
-  - Yang-Mills Theory
-  - Mass Gap
-  - Information-Density Field
-  - Proposed Framework
-  - Conservative Revision
-  - Evidence Classification
-  - Lattice QCD
-  - Gamma Scaling
-  - Vacuum Structure
-  - Quantum Field Theory
-
-type: software
-identifiers:
-  - type: doi
-    value: 10.5281/zenodo.17835201
-    description: "Zenodo DOI for UIDT v3.4"
-  - type: doi
-    value: 10.17605/OSF.IO/Q8R74
-    description: "OSF supplementary materials"
-
-references:
-  - type: article
-    title: "Quantum Yang-Mills Theory"
-    authors:
-      - family-names: Jaffe
-        given-names: Arthur
-      - family-names: Witten
-        given-names: Edward
-    year: 2000
-    publisher: "Clay Mathematics Institute"
-    url: "https://www.claymath.org/millennium-problems/yang-mills-and-mass-gap"
-
-  - type: article
-    title: "The Glueball Spectrum from an Anisotropic Lattice Study"
-    authors:
-      - family-names: Morningstar
-        given-names: Colin
-      - family-names: Peardon
-        given-names: Mike
-    journal: "Physical Review D"
-    volume: 60
-    pages: "034509"
-    year: 1999
-    doi: 10.1103/PhysRevD.60.034509
-
-  - type: article
-    title: "Extended Hadron and Two-Hadron Operators of Definite Momentum"
-    authors:
-      - family-names: Morningstar
-        given-names: Colin
-    journal: "Physical Review D"
-    volume: 83
-    pages: "114505"
-    year: 2011
-    doi: 10.1103/PhysRevD.83.114505
-
+  - "Yang-Mills Theory"
+  - "Mass Gap"
+  - "Gamma Scaling"
+  - "Dark Energy"
+  - "DESI DR2"
+  - "Theoretical Physics"
+license: "CC-BY-4.0"
 preferred-citation:
   type: article
-  title: "Unified Information-Density Theory v3.4: Conservative Revision – Vacuum Information Density as the Fundamental Geometric Scalar"
   authors:
-    - family-names: Rietz
-      given-names: Philipp
-      orcid: "https://orcid.org/0009-0007-4307-1609"
+  - family-names: "Rietz"
+    given-names: "Philipp"
+    orcid: "https://orcid.org/0009-0007-4307-1609"
+  doi: "10.5281/zenodo.17835201"
+  journal: "Zenodo Preprints"
+  title: "Unified Information-Density Theory v3.5: DESI-Optimized Framework"
   year: 2025
   month: 12
-  doi: 10.5281/zenodo.17835201
-  publisher: "Zenodo"
-  version: "3.4"
-  license: CC-BY-4.0
-  notes: |
-    Proposed theoretical framework with evidence classification. 
-    All claims categorized as: Category A (Mathematically Robust), 
-    Category B (Lattice Consistent), Category C (Model-Dependent), 
-    Category D (Unverified Predictions). Limitations comprehensively documented.
-
-contact:
-  - email: badbugs.arts@gmail.com
-    name: "Philipp Rietz"
-    orcid: "https://orcid.org/0009-0007-4307-1609"

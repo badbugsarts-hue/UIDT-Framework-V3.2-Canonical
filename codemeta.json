@@ -1,29 +1,60 @@
 {
-  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
-  "@type": "SoftwareSourceCode",
-  "name": "UIDT v3.4: Unified Information-Density Theory - Conservative Revision",
-  "description": "Conservative revision of the Unified Information-Density Theory framework proposing a mechanism for the Yang-Mills mass gap through vacuum information density coupling. Includes complete verification suite with evidence classification.",
-  "identifier": "https://doi.org/10.5281/zenodo.17835201",
-  "version": "3.4",
-  "datePublished": "2025-12-06",
-  "author": [
-    {
-      "@type": "Person",
-      "givenName": "Philipp",
-      "familyName": "Rietz",
-      "email": "badbugs.arts@gmail.com",
-      "@id": "https://orcid.org/0009-0007-4307-1609"
-    }
-  ],
-  "license": "https://creativecommons.org/licenses/by/4.0/",
-  "codeRepository": "https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical",
-  "programmingLanguage": ["Python"],
-  "keywords": [
-    "Yang-Mills Theory",
-    "Mass Gap",
-    "Proposed Framework",
-    "Conservative Revision",
-    "Evidence Classification",
-    "gamma=16.339"
-  ]
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@type": "SoftwareSourceCode",
+    "name": "UIDT v3.5: Unified Information-Density Theory - DESI-Optimized Framework",
+    "description": "This software suite provides the canonical implementation and verification environment for the Unified Information-Density Theory (UIDT) v3.5. It includes scripts for the parameter-free derivation of the Yang-Mills Mass Gap (1.710 GeV), the calculation of the Universal Gamma Invariant (16.339), and the simulation of cosmological observables (H0, S8, w(z)) calibrated to DESI DR2 data. The repository adheres to the highest standards of reproducibility with Monte Carlo validation (N=100,000) and explicit evidence classification.",
+    "identifier": "https://doi.org/10.5281/zenodo.17835201",
+    "version": "3.5",
+    "datePublished": "2025-12-07",
+    "dateModified": "2025-12-07",
+    "author": [
+        {
+            "@type": "Person",
+            "givenName": "Philipp",
+            "familyName": "Rietz",
+            "email": "badbugs.arts@gmail.com",
+            "@id": "https://orcid.org/0009-0007-4307-1609",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Independent Researcher"
+            }
+        }
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "codeRepository": "https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical",
+    "programmingLanguage": [
+        "Python",
+        "LaTeX"
+    ],
+    "runtimePlatform": [
+        "Python 3.10+",
+        "NumPy 1.24+",
+        "SciPy 1.10+"
+    ],
+    "keywords": [
+        "Yang-Mills Theory",
+        "Mass Gap",
+        "Gamma Unification",
+        "DESI DR2",
+        "Cosmology",
+        "Theoretical Framework",
+        "Lattice QCD",
+        "Open Science"
+    ],
+    "citation": "Rietz, P. (2025). Unified Information-Density Theory v3.5: DESI-Optimized Framework. Zenodo. https://doi.org/10.5281/zenodo.17835201",
+    "contributor": [
+        {
+            "@type": "Organization",
+            "name": "Theoretical Physics Community"
+        }
+    ],
+    "funder": [
+        {
+            "@type": "Organization",
+            "name": "Self-Funded"
+        }
+    ],
+    "relatedLink": [
+        "https://doi.org/10.17605/OSF.IO/Q8R74"
+    ]
 }

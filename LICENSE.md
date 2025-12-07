@@ -1,7 +1,7 @@
 Unified Information-Density Theory (UIDT) Technical Note V3.2 (Revised Edition)
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Version: V3.2 Revised](https://img.shields.io/badge/Version-V3.2_Revised-blue.svg)](https://doi.org/10.5281/zenodo.17554179)
+[![Version: V3.3 Revised](https://img.shields.io/badge/Version-V3.2_Revised-blue.svg)](10.5281/zenodo.17596783)
 [![Status: Peer Review Ready](https://img.shields.io/badge/Status-Peer_Review_Ready-green.svg)](https://philarchive.org/rec/PHIUID)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17554179-orange.svg)](https://doi.org/10.5281/zenodo.17554179)
 [![OSF Project](https://img.shields.io/badge/OSF-Project_Overview-brightgreen.svg)](https://osf.io/wdyxc/)

@@ -275,6 +275,3 @@ This repository adheres to **Schema.org** and **CodeMeta** standards for scienti
  🚀 Final Status: UIDT Ω v3.3 is scientifically and technically CLOSED.\</h3\>
  
  ```
-
-
-

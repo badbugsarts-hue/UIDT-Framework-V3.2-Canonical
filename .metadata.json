@@ -1,51 +1,36 @@
 {
-  "title": "UIDT v3.4: Unified Information-Density Theory - Conservative Revision",
-  "description": "Conservative revision of the mathematical framework proposing a solution approach to the Yang-Mills Mass Gap problem through vacuum information density. All claims classified by evidence status with appropriate scientific caution.",
-  "keywords": [
-    "yang-mills",
-    "mass-gap",
-    "information-density",
-    "vacuum-structure",
-    "proposed-framework",
-    "lattice-qcd-consistency",
-    "gamma-scaling",
-    "conservative-revision"
-  ],
-  "license": "CC-BY-4.0",
-  "upload_type": "publication",
-  "publication_type": "preprint",
-  "access_right": "open",
-  "identifier": "10.5281/zenodo.17835201",
-  "creators": [
-    {
-      "name": "Rietz, Philipp",
-      "affiliation": "Independent Researcher",
-      "orcid": "0009-0007-4307-1609"
+    "metadata": {
+        "title": "Unified Information-Density Theory (UIDT) v3.5: DESI-Optimized Framework",
+        "upload_type": "publication",
+        "publication_type": "preprint",
+        "description": "Version 3.5 of the Unified Information-Density Theory presents a consolidated framework for the Yang-Mills mass gap and cosmological tensions. This revision integrates DESI DR2 and JWST CCHP data to fix the holographic scale at 0.66 nm. All claims are classified by evidence status (Category A-D).",
+        "creators": [
+            {
+                "name": "Rietz, Philipp",
+                "affiliation": "Independent Researcher",
+                "orcid": "0009-0007-4307-1609"
+            }
+        ],
+        "access_right": "open",
+        "license": "cc-by-4.0",
+        "keywords": [
+            "Yang-Mills Theory",
+            "Mass Gap",
+            "Gamma Scaling",
+            "DESI DR2",
+            "Hubble Tension",
+            "Proposed Framework",
+            "Evidence Classification"
+        ],
+        "version": "3.5",
+        "language": "eng",
+        "notes": "DESI-Optimized Revision. Supersedes v3.3 and v3.4.",
+        "related_identifiers": [
+            {
+                "scheme": "doi",
+                "identifier": "10.5281/zenodo.17554179",
+                "relation": "isNewVersionOf"
+            }
+        ]
     }
-  ],
-  "contributors": [
-    {
-      "name": "Theoretical Physics Community",
-      "type": "Other"
-    }
-  ],
-  "related_identifiers": [
-    {
-      "relation": "isNewVersionOf",
-      "identifier": "10.5281/zenodo.17554179"
-    },
-    {
-      "relation": "isSupplementedBy",
-      "identifier": "10.17605/OSF.IO/Q8R74"
-    }
-  ],
-  "communities": [
-    {
-      "identifier": "theoretical-physics"
-    },
-    {
-      "identifier": "high-energy-physics"
-    }
-  ],
-  "notes": "Version 3.4 implements conservative revision with explicit evidence categorization: Category A (Mathematically Robust), Category B (Lattice Consistent), Category C (Model-Dependent), Category D (Unverified Predictions)."
 }
