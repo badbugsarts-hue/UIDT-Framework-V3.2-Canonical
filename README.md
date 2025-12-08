@@ -12,6 +12,17 @@
 | [![Author Badge](https://img.shields.io/badge/Author-Philipp--Rietz-blueviolet.svg)](https://orcid.org/0009-0007-4307-1609) | **Author:** Philipp Rietz |
 
 ---
+> [!IMPORTANT]
+> **Notice Regarding Version History and Data Integrity**
+>
+> With the release of **UIDT v3.5 Canonical**, I am formally superseding all previous iterations.
+>
+> Due to my severe disability, I initially delegated the administrative and formatting aspects of the v3.3 publication to external agencies to ensure a timely release. Regrettably, it became apparent that the standards of precision required for this theoretical framework were not met by these third parties, leading to significant inconsistencies in the data structure.
+>
+> Upon discovering these external errors, I took immediate action to protect the integrity of the work. Consequently, the **DOI record for v3.3 had to be permanently withdrawn and deleted** due to the resulting technical conflicts and data corruption.
+>
+> I have since retaken full personal control over every aspect of the validation process. Version 3.5 represents the clean, verified, and definitive implementation of the theory, free from external interference.
+
 
 ## 📄 Abstract
 
