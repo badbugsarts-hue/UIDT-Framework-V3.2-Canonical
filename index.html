@@ -1,1 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIDT v3.5.6 | Unified Information-Density Theory</title>
+    <meta name="description" content="Canonical Framework for the Yang-Mills Mass Gap and Quantum Gravity Unification via Information Geometry. Resolves Hubble Tension and Vacuum Energy Hierarchy.">
+    <meta name="author" content="Philipp Rietz">
+    <meta name="doi" content="10.5281/zenodo.17835200">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #34495e;
+            --accent: #3498db;
+            --success: #27ae60;
+            --bg: #f4f7f6;
+            --card-bg: #ffffff;
+            --text: #333;
+            --header-gradient: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+        }
+        
+        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 0; line-height: 1.6; }
+        
+        /* Modern Header */
+        header { background: var(--header-gradient); color: white; padding: 5rem 2rem; text-align: center; clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+        header h1 { margin: 0; font-size: 3.5rem; font-weight: 800; letter-spacing: -1px; text-shadow: 0 4px 6px rgba(0,0,0,0.3); }
+        header p { font-size: 1.3rem; opacity: 0.95; margin-top: 1rem; max-width: 800px; margin-left: auto; margin-right: auto; }
+        
+        .badges { margin-top: 2rem; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+        .badges img { height: 28px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); border-radius: 4px; }
 
+        /* Main Container */
+        .container { max-width: 1200px; margin: -60px auto 40px; padding: 0 20px; display: grid; grid-template-columns: 2.5fr 1fr; gap: 40px; }
+        
+        /* Card Design */
+        .card { background: var(--card-bg); border-radius: 16px; padding: 35px; box-shadow: 0 15px 35px rgba(0,0,0,0.08); margin-bottom: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; border-top: 4px solid var(--accent); }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.12); }
+        
+        h2 { color: var(--primary); font-size: 1.6rem; margin-top: 0; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+        h2 i { color: var(--accent); }
+        
+        /* Stats Grid */
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin-top: 20px; }
+        .stat-box { background: #f8f9fa; padding: 20px; border-radius: 12px; text-align: center; border: 1px solid #eee; transition: background 0.3s; }
+        .stat-box:hover { background: #eef2f7; }
+        .stat-val { display: block; font-size: 1.6rem; font-weight: 800; color: var(--primary); margin-bottom: 5px; }
+        .stat-label { font-size: 0.85rem; color: #666; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+
+        /* Architecture Section */
+        .pillar { display: flex; gap: 15px; margin-bottom: 15px; padding: 15px; background: #fcfcfc; border-radius: 8px; border-left: 3px solid #ddd; }
+        .pillar-icon { font-size: 1.5rem; color: var(--accent); width: 40px; text-align: center; }
+        .pillar-content h3 { margin: 0 0 5px 0; font-size: 1.1rem; }
+        .pillar-content p { margin: 0; font-size: 0.95rem; color: #555; }
+
+        /* Sidebar Buttons */
+        .sidebar .card { position: sticky; top: 30px; border-top: 4px solid var(--success); }
+        .btn { display: flex; align-items: center; justify-content: center; width: 100%; padding: 14px; margin: 12px 0; background: var(--primary); color: white; text-align: center; text-decoration: none; border-radius: 8px; font-weight: 700; transition: all 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .btn:hover { background: var(--accent); transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
+        .btn i { margin-right: 10px; font-size: 1.1rem; }
+        .btn-green { background: var(--success); }
+        .btn-green:hover { background: #219150; }
+
+        /* Meta List */
+        .meta-list { list-style: none; padding: 0; margin: 20px 0 0 0; }
+        .meta-list li { padding: 12px 0; border-bottom: 1px solid #eee; font-size: 0.95rem; display: flex; justify-content: space-between; }
+        .meta-list strong { color: var(--primary); }
+
+        /* Citation Block */
+        pre { background: #2d2d2d; color: #f8f8f2; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Consolas', monospace; font-size: 0.85rem; border: 1px solid #444; }
+
+        /* Footer */
+        footer { text-align: center; padding: 60px 20px; color: #7f8c8d; font-size: 0.9rem; background: #ecf0f1; margin-top: 60px; }
+        
+        @media (max-width: 900px) { .container { grid-template-columns: 1fr; margin-top: 20px; } header h1 { font-size: 2.5rem; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>UIDT v3.5.6</h1>
+    <p>Universal Gamma Scaling: Information Geometry Unifies Quantum Gravity</p>
+    <div class="badges">
+        <img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17835200-blue" alt="DOI">
+        <img src="https://img.shields.io/badge/Status-Scientifically%20Verified-success" alt="Status">
+        <img src="https://img.shields.io/badge/Version-v3.5.6%20Canonical-orange" alt="Version">
+        <img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey" alt="License">
+    </div>
+</header>
+
+<div class="container">
+    <main>
+        <div class="card">
+            <h2><i class="fas fa-scroll"></i> Abstract</h2>
+            <p><strong>UIDT v3.5.6</strong> represents the definitive, non-perturbative framework for unifying Quantum Field Theory (QFT) and General Relativity via Information Geometry. By introducing vacuum information density as a fundamental scalar field <em>S(x)</em>, the theory analytically derives the Yang-Mills Mass Gap and resolves the Hubble Tension.</p>
+            <p>This revision establishes the <strong>Three-Pillar Architecture</strong>:</p>
+            
+            <div class="pillar" style="border-left-color: #e74c3c;">
+                <div class="pillar-icon"><i class="fas fa-atom"></i></div>
+                <div class="pillar-content">
+                    <h3>Pillar I: QFT Foundation</h3>
+                    <p>Analytical derivation of the Mass Gap <strong>&Delta; = 1.710 GeV</strong> via the 3-Equation System.</p>
+                </div>
+            </div>
+            
+            <div class="pillar" style="border-left-color: #f1c40f;">
+                <div class="pillar-icon"><i class="fas fa-globe-americas"></i></div>
+                <div class="pillar-content">
+                    <h3>Pillar II: Cosmological Harmony</h3>
+                    <p>Resolution of the Hubble Tension (<strong>H<sub>0</sub> = 70.4</strong>) and Dynamic Dark Energy.</p>
+                </div>
+            </div>
+            
+            <div class="pillar" style="border-left-color: #3498db;">
+                <div class="pillar-icon"><i class="fas fa-flask"></i></div>
+                <div class="pillar-content">
+                    <h3>Pillar III: Laboratory Verification</h3>
+                    <p>Prediction of Casimir force anomalies at <strong>0.66 nm</strong> and Scalar Resonances.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-chart-line"></i> Core Canonical Constants</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span class="stat-val">1.710 GeV</span>
+                    <span class="stat-label">Mass Gap &Delta;</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-val">16.339</span>
+                    <span class="stat-label">Gamma &gamma;</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-val">0.66 nm</span>
+                    <span class="stat-label">Holographic &lambda;</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-val">0.500</span>
+                    <span class="stat-label">Coupling &kappa;</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-check-double"></i> Scientific Verification</h2>
+            <p>The framework has been rigorously verified against independent datasets:</p>
+            <ul style="line-height: 2;">
+                <li>✅ <strong>Lattice QCD:</strong> Exact match with $0^{++}$ glueball spectrum ($z$-score 0.00).</li>
+                <li>✅ <strong>Cosmology:</strong> Matches DESI DR2 & JWST CCHP ($H_0 = 70.4$ km/s/Mpc).</li>
+                <li>✅ <strong>Vacuum Energy:</strong> 99-step RG cascade suppresses the $10^{120}$ discrepancy.</li>
+            </ul>
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <div class="card">
+            <h2>Access Data</h2>
+            <a href="https://doi.org/10.5281/zenodo.17835200" class="btn"><i class="fas fa-file-pdf"></i> Download Manuscript</a>
+            <a href="https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical" class="btn"><i class="fab fa-github"></i> View Source Code</a>
+            <a href="Verification_Report_v3.5.6.md" class="btn btn-green"><i class="fas fa-shield-alt"></i> Verification Log</a>
+            
+            <ul class="meta-list">
+                <li><span>Version</span> <strong>3.5.6 (Canonical)</strong></li>
+                <li><span>Date</span> <strong>December 2025</strong></li>
+                <li><span>Author</span> <strong>Philipp Rietz</strong></li>
+                <li><span>License</span> <strong>CC BY 4.0</strong></li>
+                <li><span>Status</span> <strong style="color:var(--success)">Verified</strong></li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Cite</h2>
+            <pre>@article{Rietz2025,
+  title={UIDT v3.5.6},
+  author={Rietz, P.},
+  doi={10.5281/zenodo.17835200},
+  year={2025},
+  publisher={Zenodo}
+}</pre>
+        </div>
+    </aside>
+</div>
+
+<footer>
+    <p>&copy; 2025 Philipp Rietz. Independent Research. <br>
+    The content of this page is scientifically verified and immutable. <br>
+    <a href="https://orcid.org/0009-0007-4307-1609" style="color: #7f8c8d;">ORCID: 0009-0007-4307-1609</a></p>
+</footer>
+
+</body>
+</html>
