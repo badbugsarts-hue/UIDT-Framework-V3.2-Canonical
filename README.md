@@ -60,8 +60,8 @@ graph TD
     D -->|Gamma^+6| G[Fine Structure 1/alpha];
     D -->|Gamma^-3| H[Electron Mass];
     
-    style C fill:#f96,stroke:#333,stroke-width:4px
-    style D fill:#bbf,stroke:#333,stroke-width:2px
+    style C fill:#096,stroke:#333,stroke-width:4px
+    style D fill:#0bf,stroke:#333,stroke-width:2px
 ````
 
 -----
