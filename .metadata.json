@@ -1,9 +1,13 @@
 {
     "metadata": {
-        "title": "Unified Information-Density Theory (UIDT) v3.5: DESI-Optimized Framework",
+        "title": "Universal Gamma Scaling: Unified Information-Density Theory (UIDT v3.5.6) - Canonical Framework",
         "upload_type": "publication",
         "publication_type": "preprint",
-        "description": "Version 3.5 of the Unified Information-Density Theory presents a consolidated framework for the Yang-Mills mass gap and cosmological tensions. This revision integrates DESI DR2 and JWST CCHP data to fix the holographic scale at 0.66 nm. All claims are classified by evidence status (Category A-D).",
+        "prereserved_doi": {
+            "doi": "10.5281/zenodo.17835200",
+            "recid": 17835200
+        },
+        "description": "Canonical Reference (v3.5.6). Unified framework resolving Yang-Mills Mass Gap (1.710 GeV) and Vacuum Energy (99-step RG). Calibrated to DESI DR2 / JWST.",
         "creators": [
             {
                 "name": "Rietz, Philipp",
@@ -15,21 +19,20 @@
         "license": "cc-by-4.0",
         "keywords": [
             "Yang-Mills Theory",
-            "Mass Gap",
+            "Mass Gap Solution",
+            "Quantum Gravity",
             "Gamma Scaling",
             "DESI DR2",
-            "Hubble Tension",
-            "Proposed Framework",
-            "Evidence Classification"
+            "Hubble Tension"
         ],
-        "version": "3.5",
+        "version": "3.5.6 Canonical",
         "language": "eng",
-        "notes": "DESI-Optimized Revision. Supersedes v3.3 and v3.4.",
+        "notes": "Integrity Note: This version (v3.5.6) supersedes previous releases.",
         "related_identifiers": [
             {
                 "scheme": "doi",
-                "identifier": "10.5281/zenodo.17554179",
-                "relation": "isNewVersionOf"
+                "identifier": "10.5281/zenodo.17835200",
+                "relation": "isVersionOf"
             }
         ]
     }

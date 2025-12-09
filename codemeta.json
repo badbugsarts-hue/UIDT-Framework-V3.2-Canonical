@@ -1,12 +1,12 @@
 {
     "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
     "@type": "SoftwareSourceCode",
-    "name": "UIDT v3.5: Unified Information-Density Theory - DESI-Optimized Framework",
-    "description": "This software suite provides the canonical implementation and verification environment for the Unified Information-Density Theory (UIDT) v3.5. It includes scripts for the parameter-free derivation of the Yang-Mills Mass Gap (1.710 GeV), the calculation of the Universal Gamma Invariant (16.339), and the simulation of cosmological observables (H0, S8, w(z)) calibrated to DESI DR2 data. The repository adheres to the highest standards of reproducibility with Monte Carlo validation (N=100,000) and explicit evidence classification.",
-    "identifier": "https://doi.org/10.5281/zenodo.17835201",
-    "version": "3.5",
-    "datePublished": "2025-12-07",
-    "dateModified": "2025-12-07",
+    "name": "UIDT v3.5.6: Unified Information-Density Theory - Canonical Framework",
+    "description": "The UIDT v3.5.6 software suite provides the canonical implementation and verification environment for the Unified Information-Density Theory. It includes the Python solver for the parameter-free derivation of the Yang-Mills Mass Gap (1.710 GeV) and the Universal Gamma Invariant (16.339). The suite simulates the 99-step Renormalization Group (RG) cascade for vacuum energy suppression and calibrates cosmological observables (H0, S8, w(z)) against 2025 DESI DR2 and JWST data. Includes the 'Three-Pillar Architecture' validation logic.",
+    "identifier": "https://doi.org/10.5281/zenodo.17835200",
+    "version": "3.5.6",
+    "datePublished": "2025-12-09",
+    "dateModified": "2025-12-09",
     "author": [
         {
             "@type": "Person",
@@ -39,22 +39,9 @@
         "Cosmology",
         "Theoretical Framework",
         "Lattice QCD",
-        "Open Science"
+        "Open Science",
+        "Information Geometry",
+        "Vacuum Energy"
     ],
-    "citation": "Rietz, P. (2025). Unified Information-Density Theory v3.5: DESI-Optimized Framework. Zenodo. https://doi.org/10.5281/zenodo.17835201",
-    "contributor": [
-        {
-            "@type": "Organization",
-            "name": "Theoretical Physics Community"
-        }
-    ],
-    "funder": [
-        {
-            "@type": "Organization",
-            "name": "Self-Funded"
-        }
-    ],
-    "relatedLink": [
-        "https://doi.org/10.17605/OSF.IO/Q8R74"
-    ]
+    "citation": "Rietz, P. (2025). Unified Information-Density Theory v3.5.6: Vacuum Information Density as the Fundamental Geometric Scalar. Zenodo. DOI: 10.5281/zenodo.17835200"
 }

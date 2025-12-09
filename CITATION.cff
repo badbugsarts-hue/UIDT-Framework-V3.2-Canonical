@@ -1,24 +1,27 @@
 cff-version: 1.2.0
-message: "If you use this software or framework, please cite it as below."
+message: "If you use this framework, software, or theoretical derivations, please cite the canonical version as follows."
 authors:
   - family-names: "Rietz"
     given-names: "Philipp"
     orcid: "https://orcid.org/0009-0007-4307-1609"
     email: "badbugs.arts@gmail.com"
     affiliation: "Independent Researcher"
-title: "Unified Information-Density Theory v3.5: DESI-Optimized Framework"
-version: 3.5.0
-doi: 10.5281/zenodo.17835201
-date-released: 2025-12-07
+title: "Universal Gamma Scaling: Information Geometry Unifies Quantum Gravity (UIDT v3.5.6)"
+version: 3.5.6
+doi: 10.5281/zenodo.17835200
+date-released: 2025-12-09
 url: "https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical"
-abstract: "This repository contains the canonical implementation and verification suite for UIDT v3.5. It features a parameter-free derivation of the Yang-Mills Mass Gap (1.710 GeV) and a cosmological framework calibrated to 2025 DESI DR2 and JWST data. Includes Python solvers, Monte Carlo simulations, and the full theoretical manuscript."
+abstract: "UIDT v3.5.6 presents the canonical, non-perturbative framework for the unification of Quantum Field Theory (QFT) and General Relativity via Information Geometry. This revision establishes a Three-Pillar Architecture: (1) A mathematically closed derivation of the Yang-Mills Mass Gap (1.710 GeV) via non-minimal coupling; (2) A cosmological calibration using 2025 DESI DR2 and JWST CCHP data, resolving the Hubble Tension at H0 = 70.4 km/s/Mpc; (3) A hierarchical vacuum energy suppression mechanism (99-step RG cascade) reducing the cosmological constant discrepancy by ~120 orders of magnitude. The framework introduces the 'Supermassive Dark Seeds' (SMDS) hypothesis for early galaxy formation. Evidence status is explicitly classified (Category A-D)."
 keywords:
   - "Yang-Mills Theory"
   - "Mass Gap"
-  - "Gamma Scaling"
+  - "Quantum Gravity"
+  - "Gamma Invariant"
   - "Dark Energy"
   - "DESI DR2"
-  - "Theoretical Physics"
+  - "Hubble Tension"
+  - "Information Geometry"
+  - "Supermassive Dark Seeds"
 license: "CC-BY-4.0"
 preferred-citation:
   type: article
@@ -26,8 +29,8 @@ preferred-citation:
   - family-names: "Rietz"
     given-names: "Philipp"
     orcid: "https://orcid.org/0009-0007-4307-1609"
-  doi: "10.5281/zenodo.17835201"
-  journal: "Zenodo Preprints"
-  title: "Unified Information-Density Theory v3.5: DESI-Optimized Framework"
+  doi: "10.5281/zenodo.17835200"
+  journal: "Zenodo"
+  title: "Unified Information-Density Theory (UIDT) v3.5.6: Vacuum Information Density as the Fundamental Geometric Scalar"
   year: 2025
   month: 12

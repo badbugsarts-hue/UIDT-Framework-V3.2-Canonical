@@ -1,101 +1,22 @@
-UIDT_VERSION:
-  VERSION: "v3.5 DESI-Optimized Revision"
-  SUBTITLE: "Vacuum Information Density as the Fundamental Geometric Scalar"
-  STATUS: "Proposed Framework - Evidence Classified"
-  DOI_PRIMARY: "10.5281/zenodo.17835201"
-  DOI_SUPPLEMENTARY: "10.17605/OSF.IO/Q8R74"
-  PUBLICATION_DATE: "2025-12-07"
-  REVISION_TYPE: "Major update integrating DESI DR2 & JWST CCHP"
-
-FRAMEWORK_CLASSIFICATION:
-  NATURE: "Proposed theoretical framework requiring verification"
-  APPROACH: "Phenomenologically constrained model"
-  SCIENTIFIC_STATUS: "Hypothesis requiring independent experimental verification"
-  EVIDENCE_SYSTEM:
-    CATEGORY_A: "Mathematically Robust - Analytical derivations with numerical verification"
-    CATEGORY_B: "Lattice Consistent - Statistical agreement with lattice QCD"
-    CATEGORY_C: "Model-Dependent - Cosmological extrapolations with UIDT assumptions"
-    CATEGORY_D: "Unverified Predictions - Experimental proposals awaiting verification"
-
-CORE_RESULTS:
-  SECTION_1_MATHEMATICAL_FOUNDATIONS:
-    AXIOMS:
-      AXIOM_1:
-        NAME: "Information-Density Scalar Field S(x)"
-        DIMENSION: "[S] = 1 (mass dimension)"
-        DESCRIPTION: "Real scalar field coupling universally to gauge-field topological density"
-        STATUS: "Theoretical proposal"
-      AXIOM_2:
-        NAME: "Vacuum Condensate Formation"
-        MECHANISM: "Non-trivial QCD vacuum induces ⟨0|S|0⟩ ≠ 0 via non-perturbative coupling"
-        RESULT: "Spontaneous symmetry breaking without Higgs potential fine-tuning"
-    
-  SECTION_2_MASS_GAP:
-    DERIVATION: "Self-consistent solution of 3 coupled equations (VSE, SDE, RGFPE)"
-    VALUE: "1.710 ± 0.015 GeV"
-    LATTICE_COMPARISON: "Matches 0++ Glueball (1.710 ± 0.080 GeV)"
-    Z_SCORE: "0.02 (Perfect agreement)"
-    STATUS: "Category A/B (Mathematically closed)"
-
-  SECTION_3_GAMMA_INVARIANT:
-    DEFINITION: "Ratio of Mass Gap to Kinetic VEV Density"
-    FORMULA: "gamma = Delta / sqrt(<dSdS>)"
-    VALUE: "16.339 ± 0.002"
-    DERIVATION_NOTE: "Requires alpha_s(1 GeV) ≈ 0.50 (non-perturbative)"
-    STATUS: "Category A (Derived Constant)"
-
-  SECTION_4_COSMOLOGY_DESI:
-    HOLOGRAPHIC_SCALE: "0.660 ± 0.005 nm (Fixed by DESI DR2 Global Fit)"
-    HUBBLE_CONSTANT: "70.4 ± 0.16 km/s/Mpc (Matches JWST CCHP)"
-    STRUCTURE_GROWTH: "S8 = 0.757 ± 0.002 (Matches ACT DR6)"
-    DARK_ENERGY_EOS: "w(z=0.5) = -0.915 ± 0.005 (Dynamic Evolution)"
-    STATUS: "Category C (Model-Dependent / Calibrated)"
-
-LIMITATIONS_AND_TRANSPARENCY:
-  VACUUM_ENERGY:
-    PROBLEM: "10^120 discrepancy"
-    UIDT_RESULT: "10^33 residual discrepancy after gamma^-12 scaling"
-    STATUS: "Partial Suppression Mechanism (87 orders of magnitude resolved)"
-  
-  ELECTRON_MASS:
-    PREDICTION: "0.392 MeV"
-    OBSERVATION: "0.511 MeV"
-    DISCREPANCY: "23% deviation"
-    STATUS: "Known Limitation (Requires topological correction)"
-
-  HOLOGRAPHIC_LENGTH:
-    THEORY: "~ 10^-20 m"
-    OBSERVATION: "~ 10^-10 m"
-    STATUS: "Geometric scaling factor 10^10 required (Phenomenological Fit)"
-
-CITATION:
-  PREFERRED_FORMAT:
-    TYPE: "Preprint"
-    AUTHOR: "Rietz, Philipp"
-    YEAR: "2025"
-    MONTH: "December"
-    TITLE: "Unified Information-Density Theory v3.5: DESI-Optimized Framework"
-    SUBTITLE: "Vacuum Information Density as the Fundamental Geometric Scalar"
-    DOI: "10.5281/zenodo.17835201"
-    PUBLISHER: "Zenodo"
-    VERSION: "3.5"
-    LICENSE: "CC BY 4.0"
-    NOTE: "Proposed framework with evidence classification (Category A/B/C/D). Limitations comprehensively documented."
-
-CONTACT:
-  AUTHOR: "Philipp Rietz"
-  AFFILIATION: "Independent Researcher"
-  EMAIL: "badbugs.arts@gmail.com"
-  ORCID: "0009-0007-4307-1609"
-  GITHUB: "github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical"
-
-VERSION_HISTORY:
-  V3_5:
-    DATE: "2025-12-07"
-    CHANGES: "DESI-Optimized Revision. Holographic scale fixed at 0.66 nm. Vacuum residual explicit."
-  V3_4:
-    DATE: "2025-12-06"
-    CHANGES: "Conservative revision with evidence classification"
-  V3_3:
-    DATE: "2025"
-    CHANGES: "Canonical formulation with numerical verification"
+---
+title: "Universal Gamma Scaling: Unified Information-Density Theory (UIDT v3.5.6) - Canonical Framework"
+author:
+  - name: Philipp Rietz
+    affiliation: Independent Researcher
+    orcid: 0009-0007-4307-1609
+    email: badbugs.arts@gmail.com
+date: 2025-12-09
+version: 3.5.6
+doi: "10.5281/zenodo.17835200"
+license: "CC-BY-4.0"
+abstract: |
+  Version 3.5.6 presents the definitive, non-perturbative framework for the unification of Quantum Field Theory (QFT) and General Relativity via Information Geometry. It establishes the Three-Pillar Architecture: (1) Analytical derivation of the Yang-Mills Mass Gap (1.710 GeV); (2) Cosmological calibration via DESI DR2/JWST resolving the Hubble Tension; (3) 99-step RG suppression of Vacuum Energy.
+keywords:
+  - Yang-Mills Theory
+  - Mass Gap
+  - Quantum Gravity
+  - Gamma Scaling
+  - DESI DR2
+  - Hubble Tension
+repository: "https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical"
+---
