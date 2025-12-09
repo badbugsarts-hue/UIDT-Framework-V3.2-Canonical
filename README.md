@@ -61,7 +61,7 @@ graph TD
     D -->|Gamma^-3| H[Electron Mass];
     
     style C fill:#096,stroke:#333,stroke-width:4px
-    style D fill:#a0g,stroke:#333,stroke-width:2px
+    style D fill:#50g,stroke:#333,stroke-width:2px
 ````
 
 -----
