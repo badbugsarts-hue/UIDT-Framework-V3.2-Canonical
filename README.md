@@ -1,4 +1,3 @@
-````markdown
 # UIDT v3.5.6: Unified Information-Density Theory (Canonical)
 
 ---
@@ -298,8 +297,7 @@ This repository adheres to **Schema.org** and **CodeMeta** standards for scienti
 🚀 Final Status: UIDT Ω v3.5.6 is scientifically and technically CLOSED.
 ```
 
-```
-```
+
 <!-- 
 
 {
