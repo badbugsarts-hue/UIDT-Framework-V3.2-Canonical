@@ -13,10 +13,10 @@ All data, code, and supplementary materials supporting this manuscript are openl
 | Badge | Details |
 | :--- | :--- |
 | [![Repository Badge](https://img.shields.io/badge/Repository-UIDT--Framework--V3.5--Canonical-blue.svg)](https://github.com/badbugsarts-hue/UIDT-Framework-V3.5-Canonical) | **Name:** UIDT-Framework-V3.5-Canonical |
-| [![Version Badge](https://img.shields.io/badge/Version-v3.5--Ultra--Report--v16.3-green.svg)](https://doi.org/10.5281/zenodo.17554179) | **Version:** v3.5 (Canonical Core) / Ultra Report v16.3 |
-| [![Status Badge](https://img.shields.io/badge/Status-Technically--Closed-success.svg)](https://doi.org/10.5281/zenodo.17554179) | **Status:** ✅ Technically Closed — All predictions verified |
+| [![Version Badge](https://img.shields.io/badge/Version-v3.5--Ultra--Report--v16.3-green.svg)](https://doi.org/10.5281/zenodo.17835201) | **Version:** v3.5 (Canonical Core) / Ultra Report v16.3 |
+| [![Status Badge](https://img.shields.io/badge/Status-Technically--Closed-success.svg)](https://doi.org/10.5281/zenodo.17835201) | **Status:** ✅ Technically Closed — All predictions verified |
 | [![License Badge](https://img.shields.io/badge/License-CC--BY--4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) | **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
-| [![DOI Badge](https://zenodo.org/badge/DOI/10.5281/zenodo.17554179.svg)](https://doi.org/10.5281/zenodo.17554179) | **DOI:** [10.5281/zenodo.17554179](https://doi.org/10.5281/zenodo.17554179) |
+| [![DOI Badge](https://zenodo.org/badge/DOI/10.5281/zenodo.17835201.svg)](https://doi.org/10.5281/zenodo.17835201) | **DOI:** [10.5281/zenodo.17835201](https://doi.org/10.5281/zenodo.17835201) |
 | [![Author Badge](https://img.shields.io/badge/Author-Philipp--Rietz-blueviolet.svg)](https://orcid.org/0009-0007-4307-1609) | **Author:** Philipp Rietz |
 
 ---
@@ -30,7 +30,7 @@ All data, code, and supplementary materials supporting this manuscript are openl
 | :--- | :--- | :--- |
 | **GitHub** | Source Code & Docs | [badbugsarts-hue/UIDT-Framework-V3.5-Canonical](https://github.com/badbugsarts-hue/UIDT-Framework-V3.5-Canonical) |
 | **OSF** | Project Registration | [10.17605/OSF.IO/Q8R74](https://doi.org/10.17605/OSF.IO/Q8R74) |
-| **Zenodo** | Dataset & Records | [10.5281/zenodo.17554179](https://doi.org/10.5281/zenodo.17554179) |
+| **Zenodo** | Dataset & Records | [10.5281/zenodo.17835201](https://doi.org/10.5281/zenodo.17835201) |
 
 ### ⚠️ Superseded (Legacy Versions - See V3.5)
 | Platform | Resource / DOI | Link |
@@ -45,7 +45,7 @@ All data, code, and supplementary materials supporting this manuscript are openl
 
 | Scheme | Identifier / Value | Description |
 | :--- | :--- | :--- |
-| **DOI (Primary)** | `10.5281/zenodo.17554179` | **Current Definitive Record** |
+| **DOI (Primary)** | `10.5281/zenodo.17835201` | **Current Definitive Record** |
 | **Central ID** | `Q8R74` | OSF Project Identifier (Active) |
 | **ORCID** | `0009-0007-4307-1609` | Author ID (Philipp Rietz) |
 | **Legacy ID** | `WDYXC` | OSF Project Identifier (Superseded) |
@@ -219,7 +219,7 @@ All results can be independently reproduced by:
 
 ## 🔗 Primary Repositories
 
-### 1. [Zenodo — Canonical Technical Note V3.5](https://doi.org/10.5281/zenodo.17554179)
+### 1. [Zenodo — Canonical Technical Note V3.5](https://doi.org/10.5281/zenodo.17835201)
 **Contains:**
 - ✅ Complete verification Python code
 - 📊 Numerical solution data (CSV format)
@@ -263,10 +263,10 @@ The following documents are invalidated due to parameter inconsistency and are r
 ## 🗃️ Superseded Repositories and Data Sets
 
 - **GitHub:** [`badbugsarts-hue/UIDT-Framework-16.1`](https://github.com/badbugsarts-hue/UIDT-Framework-16.1)
-  _Superseded framework code with non-canonical RG flow implementations; parameter updates to v3.5 pending_
+  _Superseded framework code with non-canonical RG flow implementations; parameter updates to v3.5 pending_
 
 - **Mendeley Data:** [`b26sb6wy2h`](https://data.mendeley.com/datasets/b26sb6wy2h)
-  _Empirical fits based on faulty γ = 125 estimate_
+  _Empirical fits based on faulty γ = 125 estimate_
 
 ---
 
@@ -279,6 +279,6 @@ The following documents are invalidated due to parameter inconsistency and are r
 ---
 
 📬 For questions regarding data access, contact:
- — `badbugs.art@googlemail.com`
+ — `badbugs.art@googlemail.com`
 
 © 2025 Philipp Rietz — Licensed under CC BY 4.0
