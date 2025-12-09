@@ -206,7 +206,7 @@ This document outlines the complete file and folder structure of the repository 
 | `CITATION.cff`                | Citation metadata for scholarly referencing               |
 | `REFERENCES.bib`              | BibTeX bibliography file                                  |
 | **`UIDT-3.5-Verification.py`** | **Start Here.** Canonical verification script for $\Delta$ and $\gamma$. |
-| `UIDT_v3.5_Master.pdf`        | Full theoretical report (v3.5.6 DESI-Optimized)           |
+| `UIDT_v3.5..._Master.pdf`        | Full theoretical report (v3.5.6 DESI-Optimized)           |
 | `error_propagation.py`        | Systematic uncertainty quantification for canonical parameters. |
 | `rg_flow_analysis.py`         | Renormalization Group Flow analysis and fixed point verification. |
 | `UIDT-3.5-Verification-visual.py` | Visualization Engine for Figures 12.1-12.4            |
