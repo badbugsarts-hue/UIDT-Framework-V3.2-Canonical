@@ -15,7 +15,7 @@ G = 1.0
 plt.style.use('default') 
 
 # ==============================================================================
-# MODULE 1: GALACTIC DYNAMICS (S-FIELD CONDENSATE)
+# MODULE 1: GALACTIC DYNAMICS
 # ==============================================================================
 def newtonian_velocity(r, M_disk, R_d):
     y = r / (2.0 * R_d)
@@ -35,7 +35,7 @@ def uidt_s_field_velocity(r, M_disk, R_d, z=0):
     return np.sqrt(g_total * r)
 
 # ==============================================================================
-# MODULE 2: COSMOLOGY (MASS GAP & HORIZON)
+# MODULE 2: COSMOLOGY
 # ==============================================================================
 def scale_factor_uidt(t, t_gap, sharpness):
     a_condensate = 0.02 
@@ -59,7 +59,7 @@ def calculate_horizon(time_array, t_gap, sharpness):
     return np.array(horizons)
 
 # ==============================================================================
-# MODULE 3: VACUUM ENERGY (RG CASCADES)
+# MODULE 3: VACUUM ENERGY
 # ==============================================================================
 def vacuum_suppression():
     steps = np.arange(0, 100)
@@ -81,15 +81,15 @@ v_z0 = uidt_s_field_velocity(r, M_disk, R_scale, z=0)
 v_z2 = uidt_s_field_velocity(r, M_disk, R_scale, z=2.0)
 np.random.seed(42); v_obs = v_z0 + np.random.normal(0, 3, len(r))
 
-ax1.errorbar(r[::8], v_obs[::8], yerr=5, fmt='o', color='black', alpha=0.7, label='Observational Data ($z=0$)')
+ax1.errorbar(r[::8], v_obs[::8], yerr=5, fmt='o', color='black', alpha=0.7, label=r'Observational Data ($z=0$)')
 ax1.plot(r, v_newton, 'r--', linewidth=1.5, label='Newtonian (Baryonic Component)')
-ax1.plot(r, v_z0, color='#003366', linewidth=2.5, label=f'UIDT S-Field Halo ($z=0, \gamma_0 \\approx 16.3$)')
-ax1.plot(r, v_z2, color='#3399FF', linestyle='-.', linewidth=2, label=f'UIDT Early Universe ($z=2.0$, SMDS)')
+ax1.plot(r, v_z0, color='#003366', linewidth=2.5, label=fr'UIDT S-Field Halo ($z=0, \gamma_0 \approx 16.3$)')
+ax1.plot(r, v_z2, color='#3399FF', linestyle='-.', linewidth=2, label=fr'UIDT Early Universe ($z=2.0$, SMDS)')
 ax1.set_title(r"$\bf{I. \ Galactic \ Dynamics: \ The \ S-Field \ Dark \ Matter \ Candidate}$", fontsize=11)
 ax1.set_ylabel("Rotational Velocity [km/s]")
 ax1.set_xlabel("Radius [kpc]")
 props = dict(boxstyle='round', facecolor='#f0f0f0', alpha=0.8)
-ax1.text(18, 15, f"Canonical Parameters:\n$\gamma_0 = {GAMMA_0}$\n$\Delta = {DELTA_GAP}$ GeV\n$m_S \\approx 1.705$ GeV", fontsize=9, bbox=props)
+ax1.text(18, 15, fr"Canonical Parameters:" "\n" fr"$\gamma_0 = {GAMMA_0}$" "\n" fr"$\Delta = {DELTA_GAP}$ GeV" "\n" fr"$m_S \approx 1.705$ GeV", fontsize=9, bbox=props)
 ax1.legend(loc='lower right', fontsize=8)
 ax1.grid(True, alpha=0.2)
 
@@ -103,9 +103,9 @@ t_cmb = 8.0; idx_cmb = np.argmin(np.abs(time - t_cmb))
 ax2.plot(time, h_std, 'r--', linewidth=1.5, label='Standard Model Horizon (Disconnected)')
 ax2.plot(time, h_uidt, color='#003366', linewidth=2.5, label='UIDT Horizon (Mass Gap Transition)')
 ax2.axvline(t_cmb, color='green', linestyle=':', label='CMB Emission Surface')
-ax2.axvline(t_gap, color='orange', linestyle='--', label='Symmetry Breaking ($t_{gap}$)')
+ax2.axvline(t_gap, color='orange', linestyle='--', label=r'Symmetry Breaking ($t_{gap}$)')
 ax2.set_title(r"$\bf{II. \ Cosmological \ Harmony: \ Horizon \ Problem \ Resolution}$", fontsize=11)
-ax2.set_ylabel("Causal Horizon Radius $d_H(t)$")
+ax2.set_ylabel(r"Causal Horizon Radius $d_H(t)$")
 ax2.annotate('Causal Connectivity\n(No Inflation needed)', xy=(t_cmb, h_uidt[idx_cmb]), xytext=(t_cmb-5, h_uidt[idx_cmb]-10), arrowprops=dict(facecolor='#003366', shrink=0.05), color='#003366', weight='bold', fontsize=9)
 ax2.legend(loc='upper left', fontsize=8)
 ax2.grid(True, alpha=0.2)
@@ -119,8 +119,10 @@ ax3.set_title(r"$\bf{III. \ Vacuum \ Energy \ Resolution: \ 99-Step \ RG \ Casca
 ax3.set_ylabel(r"$Log_{10}(\rho_{vac} / \rho_{obs})$")
 ax3.set_xlabel("Renormalization Group (RG) Steps")
 ax3.annotate(r'QFT Prediction ($10^{120}$)', xy=(0, 120), xytext=(5, 105), arrowprops=dict(facecolor='black', shrink=0.05), fontsize=9)
-ax3.annotate(f'Observed Residual (~{RESIDUAL_FACTOR})', xy=(99, 1), xytext=(65, 30), arrowprops=dict(facecolor='green', shrink=0.05), color='green', weight='bold', fontsize=9)
+ax3.annotate(fr'Observed Residual (~{RESIDUAL_FACTOR})', xy=(99, 1), xytext=(65, 30), arrowprops=dict(facecolor='green', shrink=0.05), color='green', weight='bold', fontsize=9)
 ax3.grid(True, alpha=0.2)
 
 plt.tight_layout()
+plt.savefig('UIDT_v3.5.6_Final.png', dpi=300)
+print("Bereinigtes Bild gespeichert: UIDT_v3.5.6_Final.png")
 plt.show()
