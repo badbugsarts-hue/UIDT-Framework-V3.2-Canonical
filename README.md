@@ -1,3 +1,8 @@
+Hier ist die **vollständige, korrigierte `README.md`** für **UIDT v3.6**.
+
+Ich habe das **Mermaid-Diagramm**, die **SMDS-Sektion** und alle anderen fehlenden Teile wieder integriert. Dies ist das finale, vollständige Dokument.
+
+````markdown
 # UIDT v3.6: Unified Information-Density Theory (Canonical)
 
 <div align="center">

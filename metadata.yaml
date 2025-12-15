@@ -1,22 +1,43 @@
 ---
-title: "Universal Gamma Scaling: Unified Information-Density Theory (UIDT v3.5.6) - Canonical Framework"
+title: "Universal Gamma Scaling: Unified Information-Density Theory (UIDT v3.6) - Complete Manuscript"
+subtitle: "Three-Pillar Architecture, CSF-Synthesis & Mass Gap Derivation"
 author:
   - name: Philipp Rietz
     affiliation: Independent Researcher
     orcid: 0009-0007-4307-1609
     email: badbugs.arts@gmail.com
-date: 2025-12-09
-version: 3.5.6
+    roles: [Conceptualization, Formal Analysis, Software, Writing - Original Draft]
+date: 2025-12-11
+version: 3.6
 doi: "10.5281/zenodo.17835200"
 license: "CC-BY-4.0"
+status: "Canonical / Scientifically Closed"
+repository: "https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical"
 abstract: |
-  Version 3.5.6 presents the definitive, non-perturbative framework for the unification of Quantum Field Theory (QFT) and General Relativity via Information Geometry. It establishes the Three-Pillar Architecture: (1) Analytical derivation of the Yang-Mills Mass Gap (1.710 GeV); (2) Cosmological calibration via DESI DR2/JWST resolving the Hubble Tension; (3) 99-step RG suppression of Vacuum Energy.
+  UIDT v3.6 presents the definitive, non-perturbative framework for the unification of Quantum Field Theory (QFT) and General Relativity via Information Geometry. By introducing vacuum information density as a fundamental scalar field S(x), the theory analytically derives the Yang-Mills Mass Gap and resolves the Vacuum Energy Catastrophe.
+  
+  This Complete Manuscript establishes the **Three-Pillar Architecture**:
+  
+  1.  **Pillar I (QFT Foundation):** Constructive proof of the Yang-Mills Mass Gap ($\Delta = 1.710 \pm 0.015$ GeV) via the Extended Functional Renormalization Group (FRG) and Banach Fixed-Point Theorem. The derivation achieves mathematical closure with residuals $< 10^{-40}$.
+  2.  **Pillar II (Cosmological Harmony):** Resolution of the Hubble Tension ($H_0 = 70.4$ km/s/Mpc) and Structure Formation Tension ($S_8 = 0.757$) via DESI DR2 calibration. The framework incorporates the **CSF-UIDT Synthesis**, establishing a duality between microscopic information density and macroscopic covariant scalar fields. The Vacuum Energy Discrepancy ($10^{120}$) is suppressed to $\mathcal{O}(1)$ via a 99-step RG cascade and Holographic Normalization ($\pi^{-2}$).
+  3.  **Pillar III (Laboratory Verification):** Formulation of a strict Falsification Matrix, including a predicted Casimir force anomaly of $+0.59\%$ at $0.66$ nm and Scalar Resonances at $1.705$ GeV.
+  
+  Additional features include the Barrow-Rényi-Kaniadakis entropy framework and the Supermassive Dark Seeds (SMDS) model predicting He II $\lambda 1640$ signatures for JWST.
 keywords:
-  - Yang-Mills Theory
-  - Mass Gap
+  - Unified Information-Density Theory (UIDT)
+  - Yang-Mills Mass Gap
   - Quantum Gravity
   - Gamma Scaling
-  - DESI DR2
+  - Covariant Scalar-Field (CSF)
   - Hubble Tension
-repository: "https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical"
+  - Vacuum Energy Catastrophe
+  - DESI DR2
+  - Barrow Entropy
+  - Supermassive Dark Seeds (SMDS)
+  - Casimir Anomaly
+citation:
+  type: article
+  container-title: "Zenodo"
+  volume: "3.6"
+  issuance: "Canonical"
 ---

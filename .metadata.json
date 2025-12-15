@@ -1,13 +1,13 @@
 {
     "metadata": {
-        "title": "Universal Gamma Scaling: Unified Information-Density Theory (UIDT v3.5.6) - Canonical Framework",
+        "title": "Universal Gamma Scaling: Unified Information-Density Theory (UIDT v3.6) - Canonical Framework",
         "upload_type": "publication",
         "publication_type": "preprint",
         "prereserved_doi": {
             "doi": "10.5281/zenodo.17835200",
             "recid": 17835200
         },
-        "description": "Canonical Reference (v3.5.6). Unified framework resolving Yang-Mills Mass Gap (1.710 GeV) and Vacuum Energy (99-step RG). Calibrated to DESI DR2 / JWST.",
+        "description": "Canonical Reference (v3.6). Complete Manuscript establishing the Three-Pillar Architecture (QFT, Cosmology, Lab). Features analytical derivation of the Yang-Mills Mass Gap (1.710 GeV), CSF-UIDT Synthesis, SMDS model, and 99-step RG vacuum suppression. Scientifically Closed Framework.",
         "creators": [
             {
                 "name": "Rietz, Philipp",
@@ -23,11 +23,14 @@
             "Quantum Gravity",
             "Gamma Scaling",
             "DESI DR2",
-            "Hubble Tension"
+            "Hubble Tension",
+            "CSF Synthesis",
+            "Three-Pillar Architecture",
+            "Barrow Entropy"
         ],
-        "version": "3.5.6 Canonical",
+        "version": "3.6 Canonical",
         "language": "eng",
-        "notes": "Integrity Note: This version (v3.5.6) supersedes previous releases.",
+        "notes": "Integrity Note: This version (v3.6) formally supersedes all previous releases (v3.5.x, v3.3).",
         "related_identifiers": [
             {
                 "scheme": "doi",
