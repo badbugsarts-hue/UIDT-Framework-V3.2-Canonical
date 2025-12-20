@@ -1,13 +1,13 @@
 {
     "metadata": {
-        "title": "Universal Gamma Scaling: Unified Information-Density Theory (UIDT v3.6) - Canonical Framework",
+        "title": "Universal Gamma Scaling: Unified Information-Density Theory (UIDT v3.6.1) - Canonical Framework (Clean State)",
         "upload_type": "publication",
         "publication_type": "preprint",
         "prereserved_doi": {
             "doi": "10.5281/zenodo.17835200",
             "recid": 17835200
         },
-        "description": "Canonical Reference (v3.6). Complete Manuscript establishing the Three-Pillar Architecture (QFT, Cosmology, Lab). Features analytical derivation of the Yang-Mills Mass Gap (1.710 GeV), CSF-UIDT Synthesis, SMDS model, and 99-step RG vacuum suppression. Scientifically Closed Framework.",
+        "description": "Canonical Reference (v3.6.1 - Clean State). Complete Manuscript establishing the Three-Pillar Architecture (QFT, Cosmology, Lab). Features analytical derivation of the Yang-Mills Mass Gap (1.710 GeV), CSF-UIDT Synthesis, SMDS model, and 99-step RG vacuum suppression. Scientifically Closed Framework. CORRECTIONS IN v3.6.1: Vacuum Expectation Value (VEV) rectified to 47.7 MeV; Casimir effect reclassified to 'predicted, unverified' (Category D); H₀ unified to 70.4 km/s/Mpc; holographic normalization (π⁻²) explicitly documented.",
         "creators": [
             {
                 "name": "Rietz, Philipp",
@@ -26,11 +26,14 @@
             "Hubble Tension",
             "CSF Synthesis",
             "Three-Pillar Architecture",
-            "Barrow Entropy"
+            "Barrow Entropy",
+            "Holographic Vacuum",
+            "Scientific Integrity",
+            "Evidence Classification"
         ],
-        "version": "3.6 Canonical",
+        "version": "3.6.1",
         "language": "eng",
-        "notes": "Integrity Note: This version (v3.6) formally supersedes all previous releases (v3.5.x, v3.3).",
+        "notes": "Integrity Note: This version (v3.6.1) formally supersedes all previous releases (v3.6, v3.5.x, v3.3). Clean State established after v3.3 withdrawal due to external formatting errors. All corrections documented in CHANGELOG.md.",
         "related_identifiers": [
             {
                 "scheme": "doi",

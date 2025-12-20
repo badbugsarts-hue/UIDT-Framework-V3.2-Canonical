@@ -1,23 +1,33 @@
-# --- UIDT v3.5.6 Master Container ---
-# Base Image: Python 3.10 Slim (Scientific Standard)
+# --- UIDT v3.6.1 Master Container (Clean State) ---
+# Base Image: Python 3.10 Slim (Scientific Standard for Reproducibility)
 FROM python:3.10-slim
 
-# Metadaten für wissenschaftliche Reproduzierbarkeit und Zitierbarkeit
+# ==============================================================================
+# SCIENTIFIC METADATA (OCI ANNOTATIONS)
+# ==============================================================================
 LABEL maintainer="Philipp Rietz <badbugs.arts@gmail.com>"
-LABEL description="Official verification container for UIDT v3.5.6 (Canonical Framework)"
-LABEL version="3.5.6"
-LABEL license="CC-BY-4.0"
-LABEL doi="10.5281/zenodo.17835200"
+LABEL org.opencontainers.image.title="UIDT Verification Suite"
+LABEL org.opencontainers.image.description="Official verification container for UIDT v3.6.1 (Canonical Clean State)"
+LABEL org.opencontainers.image.version="3.6.1"
+LABEL org.opencontainers.image.licenses="CC-BY-4.0"
+LABEL org.opencontainers.image.url="https://doi.org/10.5281/zenodo.17835200"
 LABEL org.opencontainers.image.source="https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical"
 
-# Umgebungsvariablen für Python (Performance & Logs)
+# ==============================================================================
+# ENVIRONMENT CONFIGURATION
+# ==============================================================================
+# Prevents Python from writing pyc files to disc
 ENV PYTHONDONTWRITEBYTECODE=1
+# Prevents Python from buffering stdout and stderr (faster logs)
 ENV PYTHONUNBUFFERED=1
 
-# Arbeitsverzeichnis setzen
+# Set working directory
 WORKDIR /app
 
-# System-Abhängigkeiten für numerische Bibliotheken (numpy/scipy build dependencies)
+# ==============================================================================
+# DEPENDENCIES
+# ==============================================================================
+# Install system dependencies required for numerical libraries (numpy/scipy)
 RUN apt-get update && apt-get install -y \
     gcc \
     g++ \
@@ -25,18 +35,21 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-# Requirements installieren (Caching-Layer nutzen)
+# Install Python dependencies
+# Utilizing Docker cache layers for efficiency
 COPY requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
-# Den gesamten Projektcode kopieren
+# ==============================================================================
+# SOURCE CODE INJECTION
+# ==============================================================================
+# Copy the entire project context into the container
 COPY . .
 
-# Sicherheit: Non-Root User erstellen
-RUN useradd -m researcher
-USER researcher
-
-# Standardbefehl: Führt die kanonische Verifikation aus
-# Hinweis: Passt zur Master-Class Struktur (src/verification/)
-CMD ["python", "src/verification/UIDT-3.5-Verification.py"]
+# ==============================================================================
+# RUNTIME EXECUTION
+# ==============================================================================
+# Default Command: Executes the v3.6.1 Verification Suite
+# Ensures that every container start performs a fresh audit of the 3-Equation System.
+CMD ["python", "UIDT-3.6.1-Verification.py"]

@@ -8,7 +8,7 @@
    <dc:format>application/pdf</dc:format>
    <dc:title>
     <rdf:Alt>
-     <rdf:li xml:lang="x-default">Universal Gamma Scaling: Unified Information-Density Theory (UIDT v3.6) - Complete Manuscript</rdf:li>
+     <rdf:li xml:lang="x-default">Universal Gamma Scaling: Unified Information-Density Theory (UIDT v3.6.1) - Canonical Reference (Clean State)</rdf:li>
     </rdf:Alt>
    </dc:title>
    <dc:creator>
@@ -18,7 +18,7 @@
    </dc:creator>
    <dc:description>
     <rdf:Alt>
-     <rdf:li xml:lang="x-default">Canonical Reference (v3.6). Analytical solution to the Yang-Mills Mass Gap (1.710 GeV) and Universal Gamma Invariant (16.339). Includes Three-Pillar Architecture, CSF-UIDT Synthesis, SMDS model, and 99-step RG vacuum suppression. Status: Scientifically Synthesized and Technically Closed. DOI: 10.5281/zenodo.17835200</rdf:li>
+     <rdf:li xml:lang="x-default">⚠️ CANONICAL REFERENCE (v3.6.1 - Clean State). Establishing the Three-Pillar Architecture. Analytical derivation of the Yang-Mills Mass Gap (1.710 GeV) and Universal Gamma Invariant (16.339). RECTIFICATIONS: VEV = 47.7 MeV; Casimir anomaly = Category D (Predicted); H0 = 70.4 km/s/Mpc. Status: Scientifically Synthesized and Technically Closed. DOI: 10.5281/zenodo.17835200</rdf:li>
     </rdf:Alt>
    </dc:description>
    <dc:identifier>doi:10.5281/zenodo.17835200</dc:identifier>
@@ -27,10 +27,10 @@
      <rdf:li xml:lang="x-default">CC BY 4.0</rdf:li>
     </rdf:Alt>
    </dc:rights>
-   <pdf:Keywords>Yang-Mills, Mass Gap, Quantum Gravity, Gamma Invariant, Cosmology, DESI DR2, Hubble Tension, CSF Synthesis, Three-Pillar Architecture, Barrow Entropy</pdf:Keywords>
-   <xmp:CreateDate>2025-12-11T12:00:00Z</xmp:CreateDate>
-   <xmp:ModifyDate>2025-12-11T12:00:00Z</xmp:ModifyDate>
-   <xmp:CreatorTool>UIDT Canonical Verification Suite v3.6</xmp:CreatorTool>
+   <pdf:Keywords>Yang-Mills, Mass Gap, Quantum Gravity, Gamma Invariant, Cosmology, DESI DR2, Hubble Tension, CSF Synthesis, Three-Pillar Architecture, VEV 47.7 MeV, Clean State, Barrow Entropy</pdf:Keywords>
+   <xmp:CreateDate>2025-12-19T12:00:00Z</xmp:CreateDate>
+   <xmp:ModifyDate>2025-12-20T09:00:00Z</xmp:ModifyDate>
+   <xmp:CreatorTool>UIDT Canonical Verification Suite v3.6.1 (Clean State Audit)</xmp:CreatorTool>
   </rdf:Description>
  </rdf:RDF>
 </x:xmpmeta>

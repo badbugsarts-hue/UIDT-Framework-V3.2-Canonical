@@ -1,13 +1,13 @@
 {
     "metadata": {
-        "title": "Universal Gamma Scaling: Unified Information-Density Theory (UIDT v3.6) - Complete Manuscript",
+        "title": "Universal Gamma Scaling: Unified Information-Density Theory (UIDT v3.6.1) - Canonical Framework (Clean State)",
         "upload_type": "publication",
         "publication_type": "preprint",
         "prereserved_doi": {
-            "doi": "10.5281/zenodo.17835201",
-            "recid": 17835201
+            "doi": "10.5281/zenodo.17835200",
+            "recid": 17835200
         },
-        "description": "<p><strong>⚠️ Canonical Reference (v3.6) - Supersedes all prior versions.</strong></p><p><strong>Abstract:</strong><br>UIDT v3.6 presents the definitive, non-perturbative framework for the unification of Quantum Field Theory (QFT) and General Relativity via Information Geometry. This Complete Manuscript establishes a <strong>Three-Pillar Architecture</strong>: (1) A mathematically closed derivation of the Yang-Mills Mass Gap (1.710 GeV); (2) A cosmological calibration using 2025 DESI DR2 and JWST CCHP data, resolving the Hubble Tension at H0 = 70.4 km/s/Mpc; (3) A hierarchical vacuum energy suppression mechanism (99-step RG cascade). The framework incorporates the <strong>CSF-UIDT Synthesis</strong> (Covariant Scalar-Field unification) and the 'Supermassive Dark Seeds' (SMDS) hypothesis.</p><p><strong>Core Derived Constants (Immutable):</strong></p><ul><li><strong>Yang-Mills Mass Gap (&Delta;):</strong> 1.710 &plusmn; 0.015 GeV (Pillar I)</li><li><strong>Universal Gamma Invariant (&gamma;):</strong> 16.339 (Fundamental Scaling)</li><li><strong>Holographic Length (&lambda;):</strong> 0.66 nm (Pillar II - DESI Calibrated)</li><li><strong>Hubble Constant (H0):</strong> 70.4 km/s/Mpc (Resolves Tension)</li></ul><p><strong>Scientific Integrity:</strong><br>Claims are strictly classified (Category A: Mathematical Proof to Category D: Experimental Prediction). The derivation of &gamma; from perturbative RG is explicitly flagged as an <strong>Open Question</strong>.</p>",
+        "description": "Canonical Reference (v3.6.1 - Clean State). Complete Manuscript establishing the Three-Pillar Architecture (QFT, Cosmology, Lab). Features analytical derivation of the Yang-Mills Mass Gap (1.710 GeV), CSF-UIDT Synthesis, SMDS model, and 99-step RG vacuum suppression. Scientifically Closed Framework. CORRECTIONS IN v3.6.1: Vacuum Expectation Value (VEV) rectified to 47.7 MeV; Casimir effect reclassified to 'predicted, unverified' (Category D); H₀ unified to 70.4 km/s/Mpc; holographic normalization (π⁻²) explicitly documented.",
         "creators": [
             {
                 "name": "Rietz, Philipp",
@@ -24,22 +24,21 @@
             "Gamma Scaling",
             "DESI DR2",
             "Hubble Tension",
-            "Cosmological Constant Problem",
-            "Lattice QCD",
-            "Casimir Effect",
-            "Three-Pillar Architecture",
-            "Supermassive Dark Seeds",
             "CSF Synthesis",
-            "Barrow Entropy"
+            "Three-Pillar Architecture",
+            "Barrow Entropy",
+            "Holographic Vacuum",
+            "Scientific Integrity",
+            "Evidence Classification"
         ],
-        "version": "3.6 Canonical",
+        "version": "3.6.1",
         "language": "eng",
-        "notes": "Integrity Note: This version (v3.6) formally supersedes all previous releases. Contains the full mathematical proofs, CSF synthesis, and error-corrected datasets.",
+        "notes": "Integrity Note: This version (v3.6.1) formally supersedes all previous releases (v3.6, v3.5.x, v3.3). Clean State established after v3.3 withdrawal due to external formatting errors. All corrections documented in CHANGELOG.md.",
         "related_identifiers": [
             {
-                "scheme": "url",
-                "identifier": "https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical",
-                "relation": "isSupplementedBy"
+                "scheme": "doi",
+                "identifier": "10.5281/zenodo.17835200",
+                "relation": "isVersionOf"
             }
         ]
     }
