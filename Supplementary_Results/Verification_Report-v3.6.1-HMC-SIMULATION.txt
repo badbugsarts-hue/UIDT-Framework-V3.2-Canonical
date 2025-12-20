@@ -1,0 +1,90 @@
+
+████████████████████████████████████████████████████████████
+█               UIDT LATTICE QCD ANALYSE                  █
+█          Vollständige Parameterscans                   █
+████████████████████████████████████████████████████████████
+
+🎯 1. VOLLSTÄNDIGE HMC-SIMULATION
+🚀 Starte vollständige UIDT HMC-Simulation (v3.6.1)
+   Gitter: 12³×24
+   Parameter: β=5.7, κ=0.5, a=0.12 fm
+🔥 Thermalisierung...
+100%|██████████| 1000/1000 [00:06<00:00, 152.58it/s]
+📊 Messphase...
+100%|██████████| 3000/3000 [03:13<00:00, 15.52it/s]
+
+📊 ERGEBNISSE:
+   Glueball-Masse: 1.756 ± 0.039 GeV
+   Lattice QCD:    1.710 ± 0.080 GeV
+   Z-Score:        0.51σ
+   → Kompatibel mit Standard Lattice QCD
+
+✓ Diagnostik-Plot gespeichert: uidt_hmc_full_diagnostics.png
+
+🎯 2. κ-PARAMETER-SCAN
+
+============================================================
+PARAMETER-SCAN: κ ∈ [0.1, 1.0]
+============================================================
+
+[1/10] κ = 0.100
+   m_glueball = 1.496 ± 0.050 GeV
+   Z-Score = 2.14σ
+
+[2/10] κ = 0.200
+   m_glueball = 1.572 ± 0.050 GeV
+   Z-Score = 1.38σ
+
+[3/10] κ = 0.300
+   m_glueball = 1.580 ± 0.050 GeV
+   Z-Score = 1.30σ
+
+[4/10] κ = 0.400
+   m_glueball = 1.596 ± 0.050 GeV
+   Z-Score = 1.14σ
+
+[5/10] κ = 0.500
+   m_glueball = 1.693 ± 0.050 GeV
+   Z-Score = 0.17σ
+
+[6/10] κ = 0.600
+   m_glueball = 1.694 ± 0.050 GeV
+   Z-Score = 0.16σ
+
+[7/10] κ = 0.700
+   m_glueball = 1.815 ± 0.050 GeV
+   Z-Score = 1.05σ
+
+[8/10] κ = 0.800
+   m_glueball = 1.838 ± 0.050 GeV
+   Z-Score = 1.28σ
+
+[9/10] κ = 0.900
+   m_glueball = 1.859 ± 0.050 GeV
+   Z-Score = 1.49σ
+
+[10/10] κ = 1.000
+   m_glueball = 1.942 ± 0.050 GeV
+   Z-Score = 2.32σ
+✓ κ-Scan Plot gespeichert.
+
+🎯 3. KONTINUUMSLIMES-ANALYSE
+
+============================================================
+KONTINUUMSLIMES: β-SCAN
+============================================================
+Beta=5.6, a=0.15 fm
+   m = 1.744 GeV
+Beta=5.7, a=0.12 fm
+   m = 1.694 GeV
+Beta=5.8, a=0.1 fm
+   m = 1.691 GeV
+Beta=5.9, a=0.08 fm
+   m = 1.714 GeV
+Beta=6.0, a=0.07 fm
+   m = 1.682 GeV
+✓ Continuum Plot gespeichert.
+
+============================================================
+ANALYSE ABGESCHLOSSEN
+============================================================
