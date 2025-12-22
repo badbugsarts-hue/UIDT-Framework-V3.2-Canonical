@@ -94,9 +94,9 @@ graph TD
     D -->|γ⁺²| G[Weak Interaction Scale];
     D -->|γ⁺⁶| H[Fine Structure 1/α];
     
-    style C fill:#f96,stroke:#333,stroke-width:4px
-    style D fill:#fbf,stroke:#333,stroke-width:2px
-    style F fill:#ff9,stroke:#333,stroke-width:2px
+    style C fill:#009,stroke:#333,stroke-width:4px
+    style D fill:#009,stroke:#333,stroke-width:2px
+    style F fill:#009,stroke:#333,stroke-width:2px
 ```
 
 ---
