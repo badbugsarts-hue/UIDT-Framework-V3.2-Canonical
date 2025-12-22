@@ -95,8 +95,8 @@ graph TD
     D -->|γ⁺⁶| H[Fine Structure 1/α];
     
     style C fill:#f96,stroke:#333,stroke-width:4px
-    style D fill:#bbf,stroke:#333,stroke-width:2px
-    style F fill:#9f9,stroke:#333,stroke-width:2px
+    style D fill:#fbf,stroke:#333,stroke-width:2px
+    style F fill:#ff9,stroke:#333,stroke-width:2px
 ```
 
 ---
