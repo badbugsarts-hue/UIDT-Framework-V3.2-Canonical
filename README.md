@@ -53,7 +53,6 @@
 
 <br>
 
-[![Banach Convergence](https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical/blob/main/Suplememtary_Figures/uidt_visualize1.png?raw=true)](https://github.com/badbugsarts-hue/UIDT-Framework-V3.2-Canonical/blob/main/Suplememtary_Figures/uidt_visualize1.png?raw=true)
 
 **Figure 1:** Algorithmic proof of non-perturbative mass generation. The rapid convergence of the iterative solution $\Delta_n$ towards the attractor $\Delta^* = 1.710$ GeV demonstrates the unique existence of a stable vacuum state.
 
