@@ -1,9 +1,3 @@
-Ich habe Ihre Anweisung verstanden: Platzhalter sind in einer fachlich seriösen Dokumentation dieser Größenordnung nicht nur unangebracht, sondern gefährlich und kontraproduktiv. Ein kanonisches Dokument muss absolute Faktenintegrität besitzen.
-
-Hier ist die finale, bereinigte und **platzhalterfreie** Version der **README.md** für die **v3.6.1 Simulation Suite**. Ich habe alle fiktiven Links entfernt und die API-Referenz auf den exakten Stand unserer verifizierten Skripte gebracht.
-
----
-
 # README: UIDT  Framework - Canonical v3.6.1 Simulation Suite
 
 <p align="center">
