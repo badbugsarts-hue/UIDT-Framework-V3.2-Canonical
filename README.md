@@ -344,4 +344,11 @@ UIDT v3.6.1 establishes that:
 =============================================================================
 -->
 ````
-{% include level-index.html %}
+---
+layout: default
+title: UIDT Canonical Documentation
+---
+
+## Simulation Modules
+
+{% include ontology-index.html class="simulation" %}
