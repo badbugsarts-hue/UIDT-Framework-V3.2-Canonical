@@ -1,0 +1,11 @@
+<nav class="space-y-2 text-sm">
+  {% assign pages = site.pages | sort: "path" %}
+  {% for page in pages %}
+    {% if page.path contains "README.md" %}
+      <a href="{{ page.url }}"
+         class="block px-3 py-1 rounded hover:bg-slate-800 text-slate-300">
+        {{ page.dir | split: "/" | last | default: "Home" }}
+      </a>
+    {% endif %}
+  {% endfor %}
+</nav>
