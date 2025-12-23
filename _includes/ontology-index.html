@@ -1,0 +1,12 @@
+{% assign class = include.class %}
+{% assign pages = site.pages | where_exp: "p", "p.uidt.class == class" %}
+
+<ul class="space-y-2">
+  {% for p in pages %}
+    <li>
+      <a href="{{ p.url }}" class="text-uidt-accent hover:underline">
+        {{ p.title | default: p.name }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
