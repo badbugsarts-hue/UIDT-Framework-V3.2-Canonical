@@ -1,0 +1,20 @@
+{% assign current_dir = page.dir %}
+{% assign entries = site.pages | where_exp: "p", "p.dir == current_dir" | sort: "path" %}
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+  {% for entry in entries %}
+    {% unless entry.path contains "README.md" %}
+      <a href="{{ entry.url }}"
+         class="block p-4 rounded-lg border border-slate-700 hover:border-uidt-accent bg-slate-900 transition">
+        <div class="font-mono text-sm text-uidt-accent">
+          {{ entry.name }}
+        </div>
+        {% if entry.title %}
+          <div class="text-slate-400 text-sm mt-1">
+            {{ entry.title }}
+          </div>
+        {% endif %}
+      </a>
+    {% endunless %}
+  {% endfor %}
+</div>
