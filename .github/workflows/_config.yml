@@ -1,0 +1,19 @@
+title: UIDT Framework
+description: Unified Information Dynamics Theory
+
+theme: jekyll-theme-primer
+
+markdown: kramdown
+
+plugins:
+  - jekyll-readme-index
+  - jekyll-relative-links
+  - jekyll-titles-from-headings
+
+readme_index:
+  enabled: true
+  remove_originals: false
+
+relative_links:
+  enabled: true
+  collections: true
